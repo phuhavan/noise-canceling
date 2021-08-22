@@ -1,0 +1,7 @@
+INFILE=/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/implementation/system.ncd
+OUTFILE=/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/implementation/system.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/implementation
+LICENSE=WebPack
+USER_INFO=__0_0_0

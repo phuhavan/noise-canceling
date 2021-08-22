@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/nc_test_v1_00_a/devl/synthesis/nc_test_xst.prj"
+-top nc_test
+-p virtex6
+-ofn "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/nc_test_v1_00_a/devl/synthesis/nc_test_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib nc_test_v1_00_a

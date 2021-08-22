@@ -1,0 +1,23 @@
+Release 14.7 - libgen Xilinx EDK 14.7 Build EDK_P.20131013
+ (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../project_hw_platform/system.xml -lp
+/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project -pe
+microblaze_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mhard-float -mcpu=v8.50.c  -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"'.
+
+Running libs - 'gmake -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mhard-float -mcpu=v8.50.c  -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"'.
+Running execs_generate.

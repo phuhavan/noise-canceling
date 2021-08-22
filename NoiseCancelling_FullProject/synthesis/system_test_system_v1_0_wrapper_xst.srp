@@ -1,0 +1,1829 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/synthesis/xst_temp_dir/
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_test_system_v1_0_wrapper_xst.prj"
+Verilog Include Directory          : {"/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/" "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc6slx45csg324-3
+Output File Name                   : "../implementation/system_test_system_v1_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_test_system_v1_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" into library test_system_v1_v1_00_a
+Parsing module <user_logic>.
+Analyzing Verilog file "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/controller.v" into library test_system_v1_v1_00_a
+Parsing module <controller>.
+Analyzing Verilog file "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/demux_1_2.v" into library test_system_v1_v1_00_a
+Parsing module <demux_1_2>.
+Analyzing Verilog file "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/demux_1_4.v" into library test_system_v1_v1_00_a
+Parsing module <demux_1_4>.
+Analyzing Verilog file "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/demux_1_5.v" into library test_system_v1_v1_00_a
+Parsing module <demux_1_5>.
+Analyzing Verilog file "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/FFT.v" into library test_system_v1_v1_00_a
+Parsing module <FFT>.
+Analyzing Verilog file "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/fifo_type_1.v" into library test_system_v1_v1_00_a
+Parsing module <fifo_type_1>.
+Analyzing Verilog file "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/fifo_type_2.v" into library test_system_v1_v1_00_a
+Parsing module <fifo_type_2>.
+Analyzing Verilog file "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/hanning_wd_v4.v" into library test_system_v1_v1_00_a
+Parsing module <hanning_wd_v4>.
+Analyzing Verilog file "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/mux_5_1.v" into library test_system_v1_v1_00_a
+Parsing module <mux_5_1>.
+Analyzing Verilog file "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/hdl/system_test_system_v1_0_wrapper.v" into library work
+Parsing module <system_test_system_v1_0_wrapper>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <address_decoder>.
+Parsing architecture <IMP> of entity <address_decoder>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <slave_attachment>.
+Parsing architecture <imp> of entity <slave_attachment>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <axi_lite_ipif>.
+Parsing architecture <imp> of entity <axi_lite_ipif>.
+Parsing VHDL file "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/vhdl/test_system_v1.vhd" into library test_system_v1_v1_00_a
+Parsing entity <test_system_v1>.
+Parsing architecture <IMP> of entity <test_system_v1>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <system_test_system_v1_0_wrapper>.
+Going to vhdl side to elaborate module test_system_v1
+
+Elaborating entity <test_system_v1> (architecture <IMP>) with generics from library <test_system_v1_v1_00_a>.
+
+Elaborating entity <axi_lite_ipif> (architecture <imp>) with generics from library <axi_lite_ipif_v1_01_a>.
+
+Elaborating entity <slave_attachment> (architecture <imp>) with generics from library <axi_lite_ipif_v1_01_a>.
+
+Elaborating entity <address_decoder> (architecture <IMP>) with generics from library <axi_lite_ipif_v1_01_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+INFO:HDLCompiler:679 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" Line 417. Case statement is complete. others clause is never selected
+Going to verilog side to elaborate module user_logic
+WARNING:HDLCompiler:1016 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" Line 330: Port data_change_sign_out is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" Line 340: Port data_change_sign_out is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" Line 350: Port data_change_sign_out is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" Line 361: Port count_out is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" Line 377: Port count_out is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" Line 393: Port count_out is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" Line 409: Port count_out is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" Line 548: Port data_change_sign_out is not connected to this instance
+
+Elaborating module <user_logic(C_NUM_REG=10,C_SLV_DWIDTH=32)>.
+
+Elaborating module <controller>.
+WARNING:HDLCompiler:1127 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" Line 305: Assignment to rdce_fifo4a ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" Line 306: Assignment to rdce_fifo4b ignored, since the identifier is never used
+
+Elaborating module <hanning_wd_v4(data_width=32)>.
+WARNING:HDLCompiler:1127 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" Line 327: Assignment to data_change_sign_out ignored, since the identifier is never used
+
+Elaborating module <fifo_type_1(data_width=32,rst_value=0)>.
+
+Elaborating module <fifo_type_1(data_width=32,rst_value=64)>.
+WARNING:HDLCompiler:1127 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" Line 441: Assignment to start_fft_3re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" Line 442: Assignment to count_out_1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" Line 460: Assignment to count_out_2 ignored, since the identifier is never used
+
+Elaborating module <FFT>.
+
+Elaborating module <fifo_type_2(data_width=32)>.
+WARNING:HDLCompiler:1127 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" Line 555: Assignment to data_fifo5hn_to_bus ignored, since the identifier is never used
+
+Elaborating module <mux_5_1(data_width=32)>.
+
+Elaborating module <mux_5_1(data_width=1)>.
+
+Elaborating module <demux_1_5(data_width=1)>.
+WARNING:HDLCompiler:413 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/demux_1_5.v" Line 10: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/demux_1_5.v" Line 11: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/demux_1_5.v" Line 12: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/demux_1_5.v" Line 13: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/demux_1_5.v" Line 14: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <demux_1_2(data_width=32)>.
+
+Elaborating module <demux_1_4(data_width=32)>.
+WARNING:HDLCompiler:1127 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" Line 609: Assignment to data_fft2fifo4b ignored, since the identifier is never used
+
+Elaborating module <demux_1_4(data_width=1)>.
+WARNING:HDLCompiler:413 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/demux_1_4.v" Line 10: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/demux_1_4.v" Line 11: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/demux_1_4.v" Line 12: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/demux_1_4.v" Line 13: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:1127 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" Line 619: Assignment to dv_fifo4b ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" Line 136: Net <ready_fifo4a> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" Line 137: Net <ready_fifo4b> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" Line 138: Net <ready_fifo5> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" Line 225: Net <edone_fifo2a> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" Line 226: Net <edone_fifo2b> does not have a driver.
+Back to vhdl to continue elaboration
+Back to verilog to continue elaboration
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_test_system_v1_0_wrapper>.
+    Related source file is "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/hdl/system_test_system_v1_0_wrapper.v".
+    Summary:
+	no macro.
+Unit <system_test_system_v1_0_wrapper> synthesized.
+
+Synthesizing Unit <test_system_v1>.
+    Related source file is "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/vhdl/test_system_v1.vhd".
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+        C_S_AXI_DATA_WIDTH = 32
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
+        C_USE_WSTRB = 0
+        C_DPHASE_TIMEOUT = 8
+        C_BASEADDR = "01110101111000000000000000000000"
+        C_HIGHADDR = "01110101111000001111111111111111"
+        C_FAMILY = "spartan6"
+        C_NUM_REG = 1
+        C_NUM_MEM = 1
+        C_SLV_AWIDTH = 32
+        C_SLV_DWIDTH = 32
+    Set property "MAX_FANOUT = 10000" for signal <S_AXI_ACLK>.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "MAX_FANOUT = 10000" for signal <S_AXI_ARESETN>.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/vhdl/test_system_v1.vhd" line 296: Output port <Bus2IP_Addr> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/vhdl/test_system_v1.vhd" line 296: Output port <Bus2IP_CS> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/vhdl/test_system_v1.vhd" line 296: Output port <Bus2IP_RNW> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <test_system_v1> synthesized.
+
+Synthesizing Unit <axi_lite_ipif>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd".
+        C_S_AXI_DATA_WIDTH = 32
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
+        C_USE_WSTRB = 0
+        C_DPHASE_TIMEOUT = 8
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000001110101111000000000000000000000","0000000000000000000000000000000001110101111000001111111111111111")
+        C_ARD_NUM_CE_ARRAY = (10)
+        C_FAMILY = "spartan6"
+    Summary:
+	no macro.
+Unit <axi_lite_ipif> synthesized.
+
+Synthesizing Unit <slave_attachment>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd".
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000001110101111000000000000000000000","0000000000000000000000000000000001110101111000001111111111111111")
+        C_ARD_NUM_CE_ARRAY = (10)
+        C_IPIF_ABUS_WIDTH = 32
+        C_IPIF_DBUS_WIDTH = 32
+        C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
+        C_USE_WSTRB = 0
+        C_DPHASE_TIMEOUT = 8
+        C_FAMILY = "spartan6"
+WARNING:Xst:647 - Input <S_AXI_AWADDR<31:9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_WSTRB> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_ARADDR<31:9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" line 341: Output port <CS_for_gaps> of the instance <I_DECODER> is unconnected or connected to loadless signal.
+    Found 2-bit register for signal <state>.
+    Found 2-bit register for signal <s_axi_rresp_i>.
+    Found 32-bit register for signal <s_axi_rdata_i>.
+    Found 1-bit register for signal <s_axi_rvalid_i>.
+    Found 2-bit register for signal <s_axi_bresp_i>.
+    Found 1-bit register for signal <s_axi_bvalid_i>.
+    Found 4-bit register for signal <INCLUDE_DPHASE_TIMER.dpto_cnt>.
+    Found 1-bit register for signal <rst>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 4                                              |
+    | Clock              | S_AXI_ACLK (rising_edge)                       |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | sm_idle                                        |
+    | Power Up State     | sm_idle                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <INCLUDE_DPHASE_TIMER.dpto_cnt[3]_GND_13_o_add_31_OUT> created at line 507.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  43 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <slave_attachment> synthesized.
+
+Synthesizing Unit <address_decoder>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd".
+        C_BUS_AWIDTH = 9
+        C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000001110101111000000000000000000000","0000000000000000000000000000000001110101111000001111111111111111")
+        C_ARD_NUM_CE_ARRAY = (10)
+        C_FAMILY = "nofamily"
+WARNING:Xst:647 - Input <Address_In_Erly<0:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus_RNW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <Bus_RNW_reg>.
+    Found 1-bit register for signal <ce_out_i<0>>.
+    Found 1-bit register for signal <ce_out_i<1>>.
+    Found 1-bit register for signal <ce_out_i<2>>.
+    Found 1-bit register for signal <ce_out_i<3>>.
+    Found 1-bit register for signal <ce_out_i<4>>.
+    Found 1-bit register for signal <ce_out_i<5>>.
+    Found 1-bit register for signal <ce_out_i<6>>.
+    Found 1-bit register for signal <ce_out_i<7>>.
+    Found 1-bit register for signal <ce_out_i<8>>.
+    Found 1-bit register for signal <ce_out_i<9>>.
+    Found 1-bit register for signal <cs_out_i>.
+    Summary:
+	inferred  12 D-type flip-flop(s).
+Unit <address_decoder> synthesized.
+
+Synthesizing Unit <pselect_f_1>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "0000"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_1> synthesized.
+
+Synthesizing Unit <pselect_f_2>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "0001"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_2> synthesized.
+
+Synthesizing Unit <pselect_f_3>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "0010"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_3> synthesized.
+
+Synthesizing Unit <pselect_f_4>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "0011"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_4> synthesized.
+
+Synthesizing Unit <pselect_f_5>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "0100"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_5> synthesized.
+
+Synthesizing Unit <pselect_f_6>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "0101"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_6> synthesized.
+
+Synthesizing Unit <pselect_f_7>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "0110"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_7> synthesized.
+
+Synthesizing Unit <pselect_f_8>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "0111"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_8> synthesized.
+
+Synthesizing Unit <pselect_f_9>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "1000"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_9> synthesized.
+
+Synthesizing Unit <pselect_f_10>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "1001"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_10> synthesized.
+
+Synthesizing Unit <user_logic>.
+    Related source file is "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v".
+        C_NUM_REG = 10
+        C_SLV_DWIDTH = 32
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 272: Output port <rdce_fifo4a> of the instance <controller_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 272: Output port <rdce_fifo4b> of the instance <controller_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 319: Output port <data_change_sign_out> of the instance <hanning_inst_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 331: Output port <data_change_sign_out> of the instance <hanning_inst_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 331: Output port <sign_bit_out> of the instance <hanning_inst_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 341: Output port <data_change_sign_out> of the instance <hanning_inst_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 341: Output port <sign_bit_out> of the instance <hanning_inst_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 351: Output port <data_change_sign_out> of the instance <hanning_inst_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 351: Output port <sign_bit_out> of the instance <hanning_inst_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 365: Output port <count_out> of the instance <fifo_1a> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 365: Output port <error> of the instance <fifo_1a> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 381: Output port <count_out> of the instance <fifo_1b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 381: Output port <error> of the instance <fifo_1b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 397: Output port <count_out> of the instance <fifo_1c> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 397: Output port <error> of the instance <fifo_1c> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 413: Output port <count_out> of the instance <fifo_1d> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 413: Output port <error> of the instance <fifo_1d> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 431: Output port <count_out> of the instance <fifo_3re> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 431: Output port <error> of the instance <fifo_3re> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 431: Output port <start> of the instance <fifo_3re> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 449: Output port <count_out> of the instance <fifo_3im> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 449: Output port <error> of the instance <fifo_3im> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 465: Output port <xn_index> of the instance <fft_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 465: Output port <xk_index> of the instance <fft_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 465: Output port <busy> of the instance <fft_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 465: Output port <done> of the instance <fft_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 485: Output port <error> of the instance <fifo_type_2a_re> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 498: Output port <error> of the instance <fifo_type_2a_im> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 511: Output port <error> of the instance <fifo_type_2b_re> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 524: Output port <error> of the instance <fifo_type_2b_im> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 537: Output port <complete> of the instance <fifo_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 537: Output port <error> of the instance <fifo_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 549: Output port <data_out> of the instance <hanning_inst_fifo2hn> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 549: Output port <data_change_sign_out> of the instance <hanning_inst_fifo2hn> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 549: Output port <sign_bit_out> of the instance <hanning_inst_fifo2hn> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 603: Output port <res3> of the instance <demux_1_4_data> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/user_logic.v" line 613: Output port <res3> of the instance <demux_1_4_dv_fft> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <ready_fifo4a> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <ready_fifo4b> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <ready_fifo5> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <edone_fifo2a> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <edone_fifo2b> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <slv_reg0<30>>.
+    Found 1-bit register for signal <slv_reg0<29>>.
+    Found 1-bit register for signal <slv_reg0<28>>.
+    Found 1-bit register for signal <slv_reg0<27>>.
+    Found 1-bit register for signal <slv_reg0<26>>.
+    Found 1-bit register for signal <slv_reg0<25>>.
+    Found 1-bit register for signal <slv_reg0<24>>.
+    Found 1-bit register for signal <slv_reg0<23>>.
+    Found 1-bit register for signal <slv_reg0<22>>.
+    Found 1-bit register for signal <slv_reg0<21>>.
+    Found 1-bit register for signal <slv_reg0<20>>.
+    Found 1-bit register for signal <slv_reg0<19>>.
+    Found 1-bit register for signal <slv_reg0<18>>.
+    Found 1-bit register for signal <slv_reg0<17>>.
+    Found 1-bit register for signal <slv_reg0<16>>.
+    Found 1-bit register for signal <slv_reg0<15>>.
+    Found 1-bit register for signal <slv_reg0<14>>.
+    Found 1-bit register for signal <slv_reg0<13>>.
+    Found 1-bit register for signal <slv_reg0<12>>.
+    Found 1-bit register for signal <slv_reg0<11>>.
+    Found 1-bit register for signal <slv_reg0<10>>.
+    Found 1-bit register for signal <slv_reg0<9>>.
+    Found 1-bit register for signal <slv_reg0<8>>.
+    Found 1-bit register for signal <slv_reg0<7>>.
+    Found 1-bit register for signal <slv_reg0<6>>.
+    Found 1-bit register for signal <slv_reg0<5>>.
+    Found 1-bit register for signal <slv_reg0<4>>.
+    Found 1-bit register for signal <slv_reg0<3>>.
+    Found 1-bit register for signal <slv_reg0<2>>.
+    Found 1-bit register for signal <slv_reg0<1>>.
+    Found 1-bit register for signal <slv_reg0<0>>.
+    Found 1-bit register for signal <slv_reg1<31>>.
+    Found 1-bit register for signal <slv_reg1<30>>.
+    Found 1-bit register for signal <slv_reg1<29>>.
+    Found 1-bit register for signal <slv_reg1<28>>.
+    Found 1-bit register for signal <slv_reg1<27>>.
+    Found 1-bit register for signal <slv_reg1<26>>.
+    Found 1-bit register for signal <slv_reg1<25>>.
+    Found 1-bit register for signal <slv_reg1<24>>.
+    Found 1-bit register for signal <slv_reg1<23>>.
+    Found 1-bit register for signal <slv_reg1<22>>.
+    Found 1-bit register for signal <slv_reg1<21>>.
+    Found 1-bit register for signal <slv_reg1<20>>.
+    Found 1-bit register for signal <slv_reg1<19>>.
+    Found 1-bit register for signal <slv_reg1<18>>.
+    Found 1-bit register for signal <slv_reg1<17>>.
+    Found 1-bit register for signal <slv_reg1<16>>.
+    Found 1-bit register for signal <slv_reg1<15>>.
+    Found 1-bit register for signal <slv_reg1<14>>.
+    Found 1-bit register for signal <slv_reg1<13>>.
+    Found 1-bit register for signal <slv_reg1<12>>.
+    Found 1-bit register for signal <slv_reg1<11>>.
+    Found 1-bit register for signal <slv_reg1<10>>.
+    Found 1-bit register for signal <slv_reg1<9>>.
+    Found 1-bit register for signal <slv_reg1<8>>.
+    Found 1-bit register for signal <slv_reg1<7>>.
+    Found 1-bit register for signal <slv_reg1<6>>.
+    Found 1-bit register for signal <slv_reg1<5>>.
+    Found 1-bit register for signal <slv_reg1<4>>.
+    Found 1-bit register for signal <slv_reg1<3>>.
+    Found 1-bit register for signal <slv_reg1<2>>.
+    Found 1-bit register for signal <slv_reg1<1>>.
+    Found 1-bit register for signal <slv_reg1<0>>.
+    Found 1-bit register for signal <slv_reg2<31>>.
+    Found 1-bit register for signal <slv_reg2<30>>.
+    Found 1-bit register for signal <slv_reg2<29>>.
+    Found 1-bit register for signal <slv_reg2<28>>.
+    Found 1-bit register for signal <slv_reg2<27>>.
+    Found 1-bit register for signal <slv_reg2<26>>.
+    Found 1-bit register for signal <slv_reg2<25>>.
+    Found 1-bit register for signal <slv_reg2<24>>.
+    Found 1-bit register for signal <slv_reg2<23>>.
+    Found 1-bit register for signal <slv_reg2<22>>.
+    Found 1-bit register for signal <slv_reg2<21>>.
+    Found 1-bit register for signal <slv_reg2<20>>.
+    Found 1-bit register for signal <slv_reg2<19>>.
+    Found 1-bit register for signal <slv_reg2<18>>.
+    Found 1-bit register for signal <slv_reg2<17>>.
+    Found 1-bit register for signal <slv_reg2<16>>.
+    Found 1-bit register for signal <slv_reg2<15>>.
+    Found 1-bit register for signal <slv_reg2<14>>.
+    Found 1-bit register for signal <slv_reg2<13>>.
+    Found 1-bit register for signal <slv_reg2<12>>.
+    Found 1-bit register for signal <slv_reg2<11>>.
+    Found 1-bit register for signal <slv_reg2<10>>.
+    Found 1-bit register for signal <slv_reg2<9>>.
+    Found 1-bit register for signal <slv_reg2<8>>.
+    Found 1-bit register for signal <slv_reg2<7>>.
+    Found 1-bit register for signal <slv_reg2<6>>.
+    Found 1-bit register for signal <slv_reg2<5>>.
+    Found 1-bit register for signal <slv_reg2<4>>.
+    Found 1-bit register for signal <slv_reg2<3>>.
+    Found 1-bit register for signal <slv_reg2<2>>.
+    Found 1-bit register for signal <slv_reg2<1>>.
+    Found 1-bit register for signal <slv_reg2<0>>.
+    Found 1-bit register for signal <slv_reg3<31>>.
+    Found 1-bit register for signal <slv_reg3<30>>.
+    Found 1-bit register for signal <slv_reg3<29>>.
+    Found 1-bit register for signal <slv_reg3<28>>.
+    Found 1-bit register for signal <slv_reg3<27>>.
+    Found 1-bit register for signal <slv_reg3<26>>.
+    Found 1-bit register for signal <slv_reg3<25>>.
+    Found 1-bit register for signal <slv_reg3<24>>.
+    Found 1-bit register for signal <slv_reg3<23>>.
+    Found 1-bit register for signal <slv_reg3<22>>.
+    Found 1-bit register for signal <slv_reg3<21>>.
+    Found 1-bit register for signal <slv_reg3<20>>.
+    Found 1-bit register for signal <slv_reg3<19>>.
+    Found 1-bit register for signal <slv_reg3<18>>.
+    Found 1-bit register for signal <slv_reg3<17>>.
+    Found 1-bit register for signal <slv_reg3<16>>.
+    Found 1-bit register for signal <slv_reg3<15>>.
+    Found 1-bit register for signal <slv_reg3<14>>.
+    Found 1-bit register for signal <slv_reg3<13>>.
+    Found 1-bit register for signal <slv_reg3<12>>.
+    Found 1-bit register for signal <slv_reg3<11>>.
+    Found 1-bit register for signal <slv_reg3<10>>.
+    Found 1-bit register for signal <slv_reg3<9>>.
+    Found 1-bit register for signal <slv_reg3<8>>.
+    Found 1-bit register for signal <slv_reg3<7>>.
+    Found 1-bit register for signal <slv_reg3<6>>.
+    Found 1-bit register for signal <slv_reg3<5>>.
+    Found 1-bit register for signal <slv_reg3<4>>.
+    Found 1-bit register for signal <slv_reg3<3>>.
+    Found 1-bit register for signal <slv_reg3<2>>.
+    Found 1-bit register for signal <slv_reg3<1>>.
+    Found 1-bit register for signal <slv_reg3<0>>.
+    Found 1-bit register for signal <slv_reg4<31>>.
+    Found 1-bit register for signal <slv_reg4<30>>.
+    Found 1-bit register for signal <slv_reg4<29>>.
+    Found 1-bit register for signal <slv_reg4<28>>.
+    Found 1-bit register for signal <slv_reg4<27>>.
+    Found 1-bit register for signal <slv_reg4<26>>.
+    Found 1-bit register for signal <slv_reg4<25>>.
+    Found 1-bit register for signal <slv_reg4<24>>.
+    Found 1-bit register for signal <slv_reg4<23>>.
+    Found 1-bit register for signal <slv_reg4<22>>.
+    Found 1-bit register for signal <slv_reg4<21>>.
+    Found 1-bit register for signal <slv_reg4<20>>.
+    Found 1-bit register for signal <slv_reg4<19>>.
+    Found 1-bit register for signal <slv_reg4<18>>.
+    Found 1-bit register for signal <slv_reg4<17>>.
+    Found 1-bit register for signal <slv_reg4<16>>.
+    Found 1-bit register for signal <slv_reg4<15>>.
+    Found 1-bit register for signal <slv_reg4<14>>.
+    Found 1-bit register for signal <slv_reg4<13>>.
+    Found 1-bit register for signal <slv_reg4<12>>.
+    Found 1-bit register for signal <slv_reg4<11>>.
+    Found 1-bit register for signal <slv_reg4<10>>.
+    Found 1-bit register for signal <slv_reg4<9>>.
+    Found 1-bit register for signal <slv_reg4<8>>.
+    Found 1-bit register for signal <slv_reg4<7>>.
+    Found 1-bit register for signal <slv_reg4<6>>.
+    Found 1-bit register for signal <slv_reg4<5>>.
+    Found 1-bit register for signal <slv_reg4<4>>.
+    Found 1-bit register for signal <slv_reg4<3>>.
+    Found 1-bit register for signal <slv_reg4<2>>.
+    Found 1-bit register for signal <slv_reg4<1>>.
+    Found 1-bit register for signal <slv_reg4<0>>.
+    Found 1-bit register for signal <rdce_fifo5_delay>.
+    Found 1-bit register for signal <slv_reg0<31>>.
+    Summary:
+	inferred 161 D-type flip-flop(s).
+	inferred 166 Multiplexer(s).
+Unit <user_logic> synthesized.
+
+Synthesizing Unit <controller>.
+    Related source file is "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/controller.v".
+WARNING:Xst:647 - Input <ready_fifo5> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 7-bit register for signal <count_hn_1b>.
+    Found 1-bit register for signal <start_hn_a>.
+    Found 7-bit register for signal <count_hn_2a>.
+    Found 7-bit register for signal <count_hn_2b>.
+    Found 1-bit register for signal <start_hn_b>.
+    Found 7-bit register for signal <count_hn_fifo5>.
+    Found 1-bit register for signal <start_hn_fifo5>.
+    Found 1-bit register for signal <rdce_fifo1a>.
+    Found 1-bit register for signal <rdce_fifo1b>.
+    Found 1-bit register for signal <rdce_fifo1c>.
+    Found 1-bit register for signal <rdce_fifo1d>.
+    Found 1-bit register for signal <wrce_fifo3re>.
+    Found 1-bit register for signal <rdce_fifo3re>.
+    Found 1-bit register for signal <wrce_fifo3im>.
+    Found 1-bit register for signal <rdce_fifo3im>.
+    Found 1-bit register for signal <rdce_fifo2a_re>.
+    Found 1-bit register for signal <rdce_fifo2a_im>.
+    Found 1-bit register for signal <rdce_fifo2b_re>.
+    Found 1-bit register for signal <rdce_fifo2b_im>.
+    Found 1-bit register for signal <rdce_fifo4a>.
+    Found 1-bit register for signal <rdce_fifo4b>.
+    Found 1-bit register for signal <rdce_fifo5>.
+    Found 3-bit register for signal <mux_ctrl>.
+    Found 1-bit register for signal <demux_ctrl1>.
+    Found 1-bit register for signal <sel_fifo4>.
+    Found 1-bit register for signal <fft_mode>.
+    Found 2-bit register for signal <demux_ctrl2>.
+    Found 7-bit register for signal <count_hn_1a>.
+    Found 7-bit adder for signal <count_hn_1a[6]_GND_27_o_add_4_OUT> created at line 103.
+    Found 7-bit adder for signal <count_hn_1b[6]_GND_27_o_add_5_OUT> created at line 104.
+    Found 7-bit adder for signal <count_hn_2a[6]_GND_27_o_add_16_OUT> created at line 122.
+    Found 7-bit adder for signal <count_hn_2b[6]_GND_27_o_add_17_OUT> created at line 123.
+    Found 7-bit adder for signal <count_hn_fifo5[6]_GND_27_o_add_27_OUT> created at line 139.
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred  59 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+Unit <controller> synthesized.
+
+Synthesizing Unit <hanning_wd_v4>.
+    Related source file is "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/hanning_wd_v4.v".
+        data_width = 32
+    Found 1-bit register for signal <ready>.
+    Found 32-bit register for signal <data_add>.
+    Found 32-bit register for signal <data_loop>.
+    Found 1-bit register for signal <shift_reg>.
+    Found 4-bit register for signal <count>.
+    Found 1-bit register for signal <sign_bit>.
+    Found 14-bit register for signal <shift_ctrl<13:0>>.
+    Found 32-bit register for signal <data_latch>.
+    Found 32-bit register for signal <data_out_unsign>.
+    Found 32-bit adder for signal <data_in[31]_GND_28_o_add_3_OUT> created at line 63.
+    Found 32-bit adder for signal <data_out_unsign[31]_GND_28_o_add_6_OUT> created at line 64.
+    Found 32-bit adder for signal <data_add[31]_data_latch[31]_add_15_OUT> created at line 79.
+    Found 32-bit adder for signal <data_add[31]_data_mux_2[31]_add_21_OUT> created at line 93.
+    Found 4-bit adder for signal <count[3]_GND_28_o_add_33_OUT> created at line 124.
+    Found 128x15-bit Read Only RAM for signal <index[6]_GND_28_o_wide_mux_46_OUT>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred 149 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+Unit <hanning_wd_v4> synthesized.
+
+Synthesizing Unit <fifo_type_1_1>.
+    Related source file is "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/fifo_type_1.v".
+        data_width = 32
+        rst_value = 0
+    Found 4096-bit register for signal <n0033[4095:0]>.
+    Found 8-bit register for signal <count_reg>.
+    Found 1-bit register for signal <full>.
+    Found 1-bit register for signal <error>.
+    Found 8-bit subtractor for signal <count_reg[7]_GND_29_o_sub_9_OUT> created at line 80.
+    Found 8-bit adder for signal <count_reg[7]_GND_29_o_add_7_OUT> created at line 73.
+    Found 8-bit comparator greater for signal <PWR_29_o_count_reg[7]_LessThan_6_o> created at line 63
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 4106 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <fifo_type_1_1> synthesized.
+
+Synthesizing Unit <fifo_type_1_2>.
+    Related source file is "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/fifo_type_1.v".
+        data_width = 32
+        rst_value = 64
+    Found 4096-bit register for signal <n0033[4095:0]>.
+    Found 8-bit register for signal <count_reg>.
+    Found 1-bit register for signal <full>.
+    Found 1-bit register for signal <error>.
+    Found 8-bit subtractor for signal <count_reg[7]_GND_30_o_sub_9_OUT> created at line 80.
+    Found 8-bit adder for signal <count_reg[7]_GND_30_o_add_7_OUT> created at line 73.
+    Found 8-bit comparator greater for signal <PWR_31_o_count_reg[7]_LessThan_6_o> created at line 63
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 4106 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <fifo_type_1_2> synthesized.
+
+Synthesizing Unit <fifo_type_2>.
+    Related source file is "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/fifo_type_2.v".
+        data_width = 32
+    Found 4096-bit register for signal <n0034[4095:0]>.
+    Found 8-bit register for signal <count_reg>.
+    Found 1-bit register for signal <complete>.
+    Found 1-bit register for signal <error>.
+    Found 8-bit subtractor for signal <count_reg[7]_GND_32_o_sub_6_OUT> created at line 74.
+    Found 8-bit adder for signal <count_reg[7]_GND_32_o_add_4_OUT> created at line 66.
+    Found 8-bit comparator greater for signal <PWR_33_o_count_reg[7]_LessThan_4_o> created at line 52
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 4106 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <fifo_type_2> synthesized.
+
+Synthesizing Unit <mux_5_1_1>.
+    Related source file is "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/mux_5_1.v".
+        data_width = 32
+    Found 32-bit 7-to-1 multiplexer for signal <result> created at line 12.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux_5_1_1> synthesized.
+
+Synthesizing Unit <mux_5_1_2>.
+    Related source file is "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/mux_5_1.v".
+        data_width = 1
+    Found 1-bit 7-to-1 multiplexer for signal <result> created at line 12.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux_5_1_2> synthesized.
+
+Synthesizing Unit <demux_1_5>.
+    Related source file is "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/demux_1_5.v".
+        data_width = 1
+    Summary:
+	inferred   5 Multiplexer(s).
+Unit <demux_1_5> synthesized.
+
+Synthesizing Unit <demux_1_2>.
+    Related source file is "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/demux_1_2.v".
+        data_width = 32
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <demux_1_2> synthesized.
+
+Synthesizing Unit <demux_1_4_1>.
+    Related source file is "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/demux_1_4.v".
+        data_width = 32
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <demux_1_4_1> synthesized.
+
+Synthesizing Unit <demux_1_4_2>.
+    Related source file is "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/test_system_v1_v1_00_a/hdl/verilog/demux_1_4.v".
+        data_width = 1
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <demux_1_4_2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 128x15-bit single-port Read Only RAM                  : 5
+# Adders/Subtractors                                   : 42
+ 32-bit adder                                          : 20
+ 4-bit adder                                           : 6
+ 7-bit adder                                           : 5
+ 8-bit addsub                                          : 11
+# Registers                                            : 140
+ 1-bit register                                        : 72
+ 14-bit register                                       : 5
+ 2-bit register                                        : 3
+ 3-bit register                                        : 1
+ 32-bit register                                       : 26
+ 4-bit register                                        : 6
+ 4096-bit register                                     : 11
+ 7-bit register                                        : 5
+ 8-bit register                                        : 11
+# Comparators                                          : 11
+ 8-bit comparator greater                              : 11
+# Multiplexers                                         : 237
+ 1-bit 2-to-1 multiplexer                              : 171
+ 1-bit 7-to-1 multiplexer                              : 1
+ 15-bit 2-to-1 multiplexer                             : 5
+ 3-bit 2-to-1 multiplexer                              : 3
+ 32-bit 2-to-1 multiplexer                             : 47
+ 32-bit 7-to-1 multiplexer                             : 1
+ 7-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 7
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2404 -  FFs/Latches <data_loop<31:31>> (without init value) have a constant value of 0 in block <hanning_wd_v4>.
+
+Synthesizing (advanced) Unit <controller>.
+The following registers are absorbed into counter <count_hn_1b>: 1 register on signal <count_hn_1b>.
+The following registers are absorbed into counter <count_hn_2b>: 1 register on signal <count_hn_2b>.
+The following registers are absorbed into counter <count_hn_2a>: 1 register on signal <count_hn_2a>.
+The following registers are absorbed into counter <count_hn_fifo5>: 1 register on signal <count_hn_fifo5>.
+The following registers are absorbed into counter <count_hn_1a>: 1 register on signal <count_hn_1a>.
+Unit <controller> synthesized (advanced).
+
+Synthesizing (advanced) Unit <fifo_type_1_1>.
+The following registers are absorbed into counter <count_reg>: 1 register on signal <count_reg>.
+Unit <fifo_type_1_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <fifo_type_1_2>.
+The following registers are absorbed into counter <count_reg>: 1 register on signal <count_reg>.
+Unit <fifo_type_1_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <fifo_type_2>.
+The following registers are absorbed into counter <count_reg>: 1 register on signal <count_reg>.
+Unit <fifo_type_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <hanning_wd_v4>.
+The following registers are absorbed into accumulator <data_add>: 1 register on signal <data_add>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_index[6]_GND_28_o_wide_mux_46_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 128-word x 15-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <index>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <hanning_wd_v4> synthesized (advanced).
+
+Synthesizing (advanced) Unit <slave_attachment>.
+The following registers are absorbed into counter <INCLUDE_DPHASE_TIMER.dpto_cnt>: 1 register on signal <INCLUDE_DPHASE_TIMER.dpto_cnt>.
+Unit <slave_attachment> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 128x15-bit single-port distributed Read Only RAM      : 5
+# Adders/Subtractors                                   : 15
+ 32-bit adder                                          : 15
+# Counters                                             : 22
+ 4-bit up counter                                      : 6
+ 7-bit up counter                                      : 5
+ 8-bit updown counter                                  : 11
+# Accumulators                                         : 5
+ 32-bit up accumulator                                 : 5
+# Registers                                            : 45874
+ Flip-Flops                                            : 45874
+# Comparators                                          : 11
+ 8-bit comparator greater                              : 11
+# Multiplexers                                         : 438
+ 1-bit 2-to-1 multiplexer                              : 391
+ 1-bit 7-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 3
+ 32-bit 2-to-1 multiplexer                             : 42
+ 32-bit 7-to-1 multiplexer                             : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <s_axi_rresp_i_0> has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <s_axi_bresp_i_0> has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <test_system_v1_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/FSM_0> on signal <state[1:2]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ sm_idle  | 00
+ sm_read  | 01
+ sm_write | 10
+ sm_resp  | 11
+----------------------
+WARNING:Xst:2677 - Node <data_loop_0> of sequential type is unconnected in block <hanning_wd_v4>.
+
+Optimizing unit <system_test_system_v1_0_wrapper> ...
+
+Optimizing unit <slave_attachment> ...
+
+Optimizing unit <address_decoder> ...
+
+Optimizing unit <user_logic> ...
+
+Optimizing unit <controller> ...
+WARNING:Xst:2677 - Node <sel_fifo4> of sequential type is unconnected in block <controller>.
+
+Optimizing unit <hanning_wd_v4> ...
+
+Optimizing unit <fifo_type_1_1> ...
+
+Optimizing unit <fifo_type_1_2> ...
+
+Optimizing unit <fifo_type_2> ...
+WARNING:Xst:1293 - FF/Latch <test_system_v1_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_1> has a constant value of 0 in block <system_test_system_v1_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_system_v1_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_1> has a constant value of 0 in block <system_test_system_v1_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <test_system_v1_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_fifo5_6> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_fifo5_5> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_fifo5_4> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_fifo5_3> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_fifo5_2> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_fifo5_1> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_fifo5_0> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_31> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_30> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_29> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_28> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_27> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_26> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_25> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_24> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_23> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_22> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_21> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_20> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_19> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_18> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_17> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_16> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_15> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_14> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_13> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_12> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_11> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_10> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_9> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_8> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_7> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_6> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_5> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_4> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_3> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_2> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_1> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_add_0> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_31> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_30> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_29> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_28> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_27> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_26> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_25> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_24> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_23> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_22> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_21> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_20> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_19> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_18> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_17> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_16> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_15> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_14> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_13> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_12> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_11> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_10> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_9> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_8> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_7> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_6> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_5> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_4> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_3> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_2> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_1> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_out_unsign_0> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_31> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_30> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_29> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_28> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_27> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_26> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_25> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_24> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_23> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_22> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_21> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_20> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_19> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_18> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_17> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_16> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_15> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_14> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_13> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_12> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_11> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_10> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_9> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_8> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_7> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_6> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_5> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_4> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_3> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_2> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_1> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_latch_0> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/shift_ctrl_13> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/shift_ctrl_12> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/shift_ctrl_11> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/shift_ctrl_10> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/shift_ctrl_9> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/shift_ctrl_8> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/shift_ctrl_7> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/shift_ctrl_6> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/shift_ctrl_5> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/shift_ctrl_4> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/shift_ctrl_3> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/shift_ctrl_2> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/shift_ctrl_1> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/shift_ctrl_0> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_30> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_29> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_28> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_27> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_26> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_25> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_24> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_23> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_22> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_21> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_20> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_19> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_18> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_17> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_16> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_15> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_14> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_13> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_12> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_11> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_10> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_9> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_8> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_7> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_6> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_5> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_4> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_3> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_2> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/data_loop_1> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/hanning_inst_fifo2hn/sign_bit> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/fifo_3im/error> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/fifo_3re/error> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/fifo_1c/error> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/fifo_1a/error> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/fifo_1d/error> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/fifo_1b/error> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/fifo_5/count_reg_7> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/fifo_5/count_reg_6> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/fifo_5/count_reg_5> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/fifo_5/count_reg_4> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/fifo_5/count_reg_3> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/fifo_5/count_reg_2> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/fifo_5/count_reg_1> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/fifo_5/count_reg_0> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/fifo_5/error> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/fifo_5/complete> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/error> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/error> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/error> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+WARNING:Xst:2677 - Node <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/error> of sequential type is unconnected in block <system_test_system_v1_0_wrapper>.
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/sign_bit> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/sign_bit> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/count_0> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/count_0> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/count_1> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/count_1> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_1a_0> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_1b_0> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/count_2> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/count_2> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_1a_1> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_1b_1> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/count_3> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/count_3> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_1a_2> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_1b_2> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_1a_3> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_1b_3> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_1a_4> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_1b_4> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_10> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_10> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_1a_5> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_1b_5> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_11> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_11> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_12> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_12> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_13> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_13> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_14> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_14> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_20> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_20> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_15> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_15> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_21> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_21> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_16> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_16> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_22> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_22> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_17> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_17> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_23> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_23> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/count_0> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/count_0> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_18> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_18> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_24> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_24> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/count_1> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/count_1> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_19> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_19> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_30> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_30> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/count_2> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/count_2> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_25> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_25> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_26> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_26> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/count_3> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/count_3> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_1> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_1> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_27> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_27> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_2> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_2> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_28> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_28> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_3> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_3> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_29> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_29> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_4> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_4> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_5> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_5> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_6> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_6> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_7> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_7> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_8> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_8> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/data_loop_9> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/data_loop_9> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/shift_reg> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/shift_reg> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/shift_reg> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/shift_reg> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/ready> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/ready> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_1> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_1> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_2> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_2> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_3> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_3> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_4> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_4> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_5> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_5> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_6> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_6> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_7> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_7> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_8> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_8> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_9> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_9> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/controller_inst/rdce_fifo3im> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/controller_inst/rdce_fifo3re> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/ready> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/ready> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_4/sign_bit> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_3/sign_bit> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_2a_0> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_2b_0> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_2a_1> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_2b_1> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_2a_2> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_2b_2> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_2a_3> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_2b_3> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_2a_4> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_2b_4> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_2a_5> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_2b_5> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_10> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_10> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_11> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_11> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_12> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_12> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_13> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_13> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_14> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_14> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_20> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_20> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_15> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_15> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_21> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_21> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_16> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_16> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_22> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_22> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_17> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_17> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_23> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_23> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_18> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_18> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_24> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_24> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_19> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_19> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_30> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_30> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_25> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_25> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_26> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_26> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_27> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_27> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_28> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_28> 
+INFO:Xst:2261 - The FF/Latch <test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_loop_29> in Unit <system_test_system_v1_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <test_system_v1_0/USER_LOGIC_I/hanning_inst_1/data_loop_29> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_test_system_v1_0_wrapper, actual ratio is 246.
+Optimizing block <system_test_system_v1_0_wrapper> to meet ratio 100 (+ 0) of 6822 slices :
+WARNING:Xst:2254 - Area constraint could not be met for block <system_test_system_v1_0_wrapper>, final ratio is 245.
+FlipFlop test_system_v1_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg has been replicated 5 time(s)
+FlipFlop test_system_v1_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0 has been replicated 2 time(s)
+FlipFlop test_system_v1_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1 has been replicated 2 time(s)
+FlipFlop test_system_v1_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_5 has been replicated 2 time(s)
+FlipFlop test_system_v1_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_6 has been replicated 2 time(s)
+FlipFlop test_system_v1_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_7 has been replicated 2 time(s)
+FlipFlop test_system_v1_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_8 has been replicated 2 time(s)
+FlipFlop test_system_v1_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_9 has been replicated 2 time(s)
+FlipFlop test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_2a_2 has been replicated 1 time(s)
+FlipFlop test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_2a_3 has been replicated 1 time(s)
+FlipFlop test_system_v1_0/USER_LOGIC_I/controller_inst/demux_ctrl2_0 has been replicated 1 time(s)
+FlipFlop test_system_v1_0/USER_LOGIC_I/controller_inst/demux_ctrl2_1 has been replicated 1 time(s)
+FlipFlop test_system_v1_0/USER_LOGIC_I/controller_inst/mux_ctrl_0 has been replicated 2 time(s)
+FlipFlop test_system_v1_0/USER_LOGIC_I/controller_inst/mux_ctrl_1 has been replicated 2 time(s)
+FlipFlop test_system_v1_0/USER_LOGIC_I/controller_inst/mux_ctrl_2 has been replicated 2 time(s)
+FlipFlop test_system_v1_0/USER_LOGIC_I/controller_inst/wrce_fifo3im has been replicated 1 time(s)
+FlipFlop test_system_v1_0/USER_LOGIC_I/controller_inst/wrce_fifo3re has been replicated 1 time(s)
+FlipFlop test_system_v1_0/USER_LOGIC_I/hanning_inst_2/ready has been replicated 1 time(s)
+FlipFlop test_system_v1_0/USER_LOGIC_I/hanning_inst_4/ready has been replicated 1 time(s)
+FlipFlop test_system_v1_0/USER_LOGIC_I/slv_reg0_31 has been replicated 1 time(s)
+FlipFlop test_system_v1_0/USER_LOGIC_I/slv_reg1_31 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <system_test_system_v1_0_wrapper> :
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_31>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_30>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_29>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_28>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_27>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_26>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_25>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_24>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_23>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_22>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_21>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_20>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_19>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_18>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_17>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_16>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_15>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_14>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_13>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_12>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_11>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_10>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_9>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_8>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_7>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_6>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_5>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_4>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_3>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_2>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_1>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3im/reg_file_0_0>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_31>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_30>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_29>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_28>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_27>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_26>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_25>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_24>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_23>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_22>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_21>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_20>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_19>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_18>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_17>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_16>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_15>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_14>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_13>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_12>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_11>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_10>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_9>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_8>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_7>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_6>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_5>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_4>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_3>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_2>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_1>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_3re/reg_file_0_0>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_31>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_30>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_29>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_28>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_27>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_26>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_25>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_24>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_23>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_22>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_21>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_20>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_19>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_18>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_17>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_16>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_15>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_14>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_13>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_12>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_11>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_10>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_9>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_8>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_7>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_6>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_5>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_4>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_3>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_2>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_1>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1c/reg_file_0_0>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_31>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_30>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_29>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_28>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_27>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_26>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_25>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_24>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_23>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_22>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_21>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_20>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_19>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_18>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_17>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_16>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_15>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_14>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_13>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_12>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_11>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_10>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_9>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_8>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_7>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_6>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_5>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_4>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_3>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_2>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_1>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1a/reg_file_0_0>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_31>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_30>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_29>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_28>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_27>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_26>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_25>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_24>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_23>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_22>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_21>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_20>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_19>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_18>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_17>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_16>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_15>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_14>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_13>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_12>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_11>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_10>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_9>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_8>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_7>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_6>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_5>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_4>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_3>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_2>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_1>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1d/reg_file_0_0>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_31>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_30>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_29>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_28>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_27>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_26>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_25>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_24>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_23>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_22>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_21>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_20>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_19>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_18>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_17>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_16>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_15>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_14>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_13>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_12>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_11>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_10>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_9>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_8>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_7>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_6>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_5>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_4>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_3>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_2>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_1>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_1b/reg_file_0_0>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_31>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_30>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_29>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_28>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_27>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_26>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_25>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_24>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_23>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_22>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_21>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_20>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_19>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_18>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_17>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_16>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_15>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_14>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_13>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_12>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_11>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_10>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_9>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_8>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_7>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_6>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_5>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_4>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_3>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_2>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_1>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_5/reg_file_0_0>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_31>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_30>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_29>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_28>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_27>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_26>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_25>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_24>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_23>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_22>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_21>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_20>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_19>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_18>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_17>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_16>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_15>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_14>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_13>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_12>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_11>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_10>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_9>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_8>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_7>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_6>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_5>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_4>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_3>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_2>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_1>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_im/reg_file_0_0>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_31>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_30>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_29>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_28>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_27>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_26>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_25>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_24>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_23>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_22>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_21>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_20>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_19>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_18>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_17>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_16>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_15>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_14>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_13>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_12>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_11>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_10>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_9>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_8>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_7>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_6>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_5>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_4>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_3>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_2>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_1>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2b_re/reg_file_0_0>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_31>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_30>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_29>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_28>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_27>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_26>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_25>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_24>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_23>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_22>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_21>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_20>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_19>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_18>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_17>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_16>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_15>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_14>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_13>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_12>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_11>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_10>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_9>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_8>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_7>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_6>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_5>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_4>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_3>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_2>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_1>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_im/reg_file_0_0>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_31>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_30>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_29>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_28>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_27>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_26>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_25>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_24>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_23>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_22>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_21>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_20>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_19>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_18>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_17>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_16>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_15>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_14>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_13>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_12>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_11>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_10>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_9>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_8>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_7>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_6>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_5>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_4>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_3>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_2>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_1>.
+	Found 127-bit shift register for signal <test_system_v1_0/USER_LOGIC_I/fifo_type_2a_re/reg_file_0_0>.
+Unit <system_test_system_v1_0_wrapper> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1248
+ Flip-Flops                                            : 1248
+# Shift Registers                                      : 352
+ 127-bit shift register                                : 352
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_test_system_v1_0_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 3846
+#      GND                         : 1
+#      INV                         : 255
+#      LUT1                        : 12
+#      LUT2                        : 565
+#      LUT3                        : 539
+#      LUT4                        : 177
+#      LUT5                        : 445
+#      LUT6                        : 593
+#      MULT_AND                    : 42
+#      MUXCY                       : 566
+#      MUXF7                       : 58
+#      VCC                         : 1
+#      XORCY                       : 592
+# FlipFlops/Latches                : 3338
+#      FD                          : 35
+#      FDE                         : 368
+#      FDR                         : 456
+#      FDRE                        : 2479
+# Shift Registers                  : 1408
+#      SRLC32E                     : 1408
+# Others                           : 1
+#      FFT                         : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            3338  out of  54576     6%  
+ Number of Slice LUTs:                 3994  out of  27288    14%  
+    Number used as Logic:              2586  out of  27288     9%  
+    Number used as Memory:             1408  out of   6408    21%  
+       Number used as SRL:             1408
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   5538
+   Number with an unused Flip Flop:    2200  out of   5538    39%  
+   Number with an unused LUT:          1544  out of   5538    27%  
+   Number of fully used LUT-FF pairs:  1794  out of   5538    32%  
+   Number of unique control sets:        52
+
+IO Utilization: 
+ Number of IOs:                         468
+ Number of bonded IOBs:                   0  out of    218     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                   | Load  |
+-----------------------------------+-------------------------------------------------------------------------+-------+
+S_AXI_ACLK                         | NONE(test_system_v1_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1)| 4746  |
+-----------------------------------+-------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.960ns (Maximum Frequency: 201.630MHz)
+   Minimum input arrival time before clock: 4.884ns
+   Maximum output required time after clock: 4.143ns
+   Maximum combinational path delay: 2.800ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'S_AXI_ACLK'
+  Clock period: 4.960ns (frequency: 201.630MHz)
+  Total number of paths / destination ports: 88983 / 7901
+-------------------------------------------------------------------------
+Delay:               4.960ns (Levels of Logic = 2)
+  Source:            test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_1a_3 (FF)
+  Destination:       test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_latch_31 (FF)
+  Source Clock:      S_AXI_ACLK rising
+  Destination Clock: S_AXI_ACLK rising
+
+  Data Path: test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_1a_3 to test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_latch_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            62   0.447   1.874  test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_1a_3 (test_system_v1_0/USER_LOGIC_I/controller_inst/count_hn_1a_3)
+     LUT4:I0->O            2   0.203   0.617  test_system_v1_0/USER_LOGIC_I/hanning_inst_2/_n0117_inv_SW0 (N16)
+     LUT6:I5->O           32   0.205   1.291  test_system_v1_0/USER_LOGIC_I/hanning_inst_2/_n0117_inv (test_system_v1_0/USER_LOGIC_I/hanning_inst_2/_n0117_inv)
+     FDRE:CE                   0.322          test_system_v1_0/USER_LOGIC_I/hanning_inst_2/data_latch_0
+    ----------------------------------------
+    Total                      4.960ns (1.177ns logic, 3.783ns route)
+                                       (23.7% logic, 76.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXI_ACLK'
+  Total number of paths / destination ports: 11109 / 7347
+-------------------------------------------------------------------------
+Offset:              4.884ns (Levels of Logic = 3)
+  Source:            test_system_v1_0/USER_LOGIC_I/fft_inst:rfd (PAD)
+  Destination:       test_system_v1_0/USER_LOGIC_I/fifo_1d/full (FF)
+  Destination Clock: S_AXI_ACLK rising
+
+  Data Path: test_system_v1_0/USER_LOGIC_I/fft_inst:rfd to test_system_v1_0/USER_LOGIC_I/fifo_1d/full
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    FFT:rfd              117   0.000   2.169  test_system_v1_0/USER_LOGIC_I/fft_inst (test_system_v1_0/USER_LOGIC_I/rfd_fft)
+     LUT4:I0->O           41   0.203   1.420  test_system_v1_0/USER_LOGIC_I/demux_1_5_rfd_datain/Mmux_n001311 (test_system_v1_0/USER_LOGIC_I/rfd_fft2fifo_1b)
+     LUT6:I5->O            1   0.205   0.580  test_system_v1_0/USER_LOGIC_I/fifo_1b/full_glue_set_SW1 (N86)
+     LUT6:I5->O            1   0.205   0.000  test_system_v1_0/USER_LOGIC_I/fifo_1b/full_glue_set (test_system_v1_0/USER_LOGIC_I/fifo_1b/full_glue_set)
+     FDR:D                     0.102          test_system_v1_0/USER_LOGIC_I/fifo_1b/full
+    ----------------------------------------
+    Total                      4.884ns (0.715ns logic, 4.169ns route)
+                                       (14.6% logic, 85.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'S_AXI_ACLK'
+  Total number of paths / destination ports: 1387 / 274
+-------------------------------------------------------------------------
+Offset:              4.143ns (Levels of Logic = 3)
+  Source:            test_system_v1_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_5 (FF)
+  Destination:       S_AXI_ARREADY (PAD)
+  Source Clock:      S_AXI_ACLK rising
+
+  Data Path: test_system_v1_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_5 to S_AXI_ARREADY
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              35   0.447   1.679  test_system_v1_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_5 (test_system_v1_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_5)
+     LUT6:I1->O            3   0.203   0.651  test_system_v1_0/USER_LOGIC_I/slv_write_ack<0>_SW1 (N88)
+     LUT6:I5->O            3   0.205   0.755  test_system_v1_0/USER_LOGIC_I/slv_write_ack<0> (test_system_v1_0/user_IP2Bus_WrAck)
+     LUT2:I0->O            0   0.203   0.000  test_system_v1_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done1 (S_AXI_AWREADY)
+    ----------------------------------------
+    Total                      4.143ns (1.058ns logic, 3.085ns route)
+                                       (25.5% logic, 74.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 71 / 71
+-------------------------------------------------------------------------
+Delay:               2.800ns (Levels of Logic = 1)
+  Source:            S_AXI_ARESETN (PAD)
+  Destination:       test_system_v1_0/USER_LOGIC_I/fft_inst:fwd_inv (PAD)
+
+  Data Path: S_AXI_ARESETN to test_system_v1_0/USER_LOGIC_I/fft_inst:fwd_inv
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     INV:I->O           2616   0.206   2.594  test_system_v1_0/USER_LOGIC_I/Bus2IP_Resetn_inv1_INV_0 (test_system_v1_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_rstpot)
+    FFT:fwd_inv                0.000          test_system_v1_0/USER_LOGIC_I/fft_inst
+    ----------------------------------------
+    Total                      2.800ns (0.206ns logic, 2.594ns route)
+                                       (7.4% logic, 92.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock S_AXI_ACLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+S_AXI_ACLK     |    4.960|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 91.00 secs
+Total CPU time to Xst completion: 90.97 secs
+ 
+--> 
+
+
+Total memory usage is 746340 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  223 (   0 filtered)
+Number of infos    :  130 (   0 filtered)
+

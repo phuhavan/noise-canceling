@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/drivers/nc_test_v1_00_a/data/nc_test_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Sun Jul 12 21:06:28 2015 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER nc_test
+
+  OPTION supported_peripherals = (nc_test);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

@@ -1,0 +1,10 @@
+##############################################################################
+## Filename:          /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/nc_test_v1_00_a/data/nc_test_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Sun Jul 12 21:06:21 2015 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+lib nc_test_v1_00_a user_logic verilog
+lib nc_test_v1_00_a nc_test vhdl

@@ -1,0 +1,6 @@
+07:23:54 **** Build of project noiseCancer_bsp ****
+make -k all 
+Finished building libraries
+
+07:23:54 Build Finished (took 78ms)
+

@@ -1,0 +1,32 @@
+##############################################################################
+## Filename:          /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/nc_test_v1_00_a/data/nc_test_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Sun Jul 12 21:16:03 2015 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a proc_common_pkg vhdl
+lib proc_common_v3_00_a ipif_pkg vhdl
+lib proc_common_v3_00_a or_muxcy vhdl
+lib proc_common_v3_00_a or_gate128 vhdl
+lib proc_common_v3_00_a family_support vhdl
+lib proc_common_v3_00_a pselect_f vhdl
+lib proc_common_v3_00_a counter_f vhdl
+lib axi_lite_ipif_v1_01_a address_decoder vhdl
+lib axi_lite_ipif_v1_01_a slave_attachment vhdl
+lib axi_lite_ipif_v1_01_a axi_lite_ipif vhdl
+lib nc_test_v1_00_a user_logic verilog
+lib nc_test_v1_00_a nc_test vhdl
+lib nc_test_v1_00_a controller verilog
+lib nc_test_v1_00_a demux_1_3 verilog
+lib nc_test_v1_00_a demux_1_4 verilog
+lib nc_test_v1_00_a demux_1_5 verilog
+lib nc_test_v1_00_a FFT verilog
+lib nc_test_v1_00_a fifo128_type1 verilog
+lib nc_test_v1_00_a fifo128_type2 verilog
+lib nc_test_v1_00_a fifo128_type3 verilog
+lib nc_test_v1_00_a fifo128_type4 verilog
+lib nc_test_v1_00_a hanning_recover verilog
+lib nc_test_v1_00_a hanning_wd verilog
+lib nc_test_v1_00_a mux_5_1 verilog
+lib nc_test_v1_00_a overlap_add verilog
+lib nc_test_v1_00_a top_noiseCancelling verilog

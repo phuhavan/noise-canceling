@@ -1,0 +1,13 @@
+vhdl proc_common_v3_00_a /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd
+vhdl proc_common_v3_00_a /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd
+vhdl proc_common_v3_00_a /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd
+vhdl proc_common_v3_00_a /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd
+vhdl proc_common_v3_00_a /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd
+vhdl proc_common_v3_00_a /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd
+vhdl axi_lite_ipif_v1_01_a /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd
+verilog d_ac97_axi_v1_10_a /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/verilog/ac97_controller.v
+vhdl axi_lite_ipif_v1_01_a /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd
+vhdl d_ac97_axi_v1_10_a /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/vhdl/user_logic.vhd
+vhdl axi_lite_ipif_v1_01_a /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd
+vhdl d_ac97_axi_v1_10_a /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/vhdl/d_ac97_axi.vhd
+vhdl work ../hdl/system_digilent_ac97_cntlr_1_wrapper.vhd

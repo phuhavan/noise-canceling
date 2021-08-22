@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/project_hw_platform/system_bd.bmm" key="project_hw_platform-bmmFile"/>
+	<item value="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/project_hw_platform/system.bit" key="project_hw_platform-bitFile"/>
+	<item value="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/noiseCancer/Debug/noiseCancer.elf" key="project_hw_platform-microblaze_0-initElf"/>
+</section>

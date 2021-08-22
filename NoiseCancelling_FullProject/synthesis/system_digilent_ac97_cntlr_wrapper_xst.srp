@@ -1,0 +1,1200 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/synthesis/xst_temp_dir/
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_digilent_ac97_cntlr_wrapper_xst.prj"
+Verilog Include Directory          : {"/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/" "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc6slx45csg324-3
+Output File Name                   : "../implementation/system_digilent_ac97_cntlr_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_digilent_ac97_cntlr_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/verilog/ac97_controller.v" into library d_ac97_axi_v1_10_a
+Parsing module <ac97_controller>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate128>.
+Parsing architecture <imp> of entity <or_gate128>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <address_decoder>.
+Parsing architecture <IMP> of entity <address_decoder>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <slave_attachment>.
+Parsing architecture <imp> of entity <slave_attachment>.
+Parsing VHDL file "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/vhdl/user_logic.vhd" into library d_ac97_axi_v1_10_a
+Parsing entity <user_logic>.
+INFO:HDLCompiler:1676 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/vhdl/user_logic.vhd" Line 94. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
+Parsing architecture <IMP> of entity <user_logic>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <axi_lite_ipif>.
+Parsing architecture <imp> of entity <axi_lite_ipif>.
+Parsing VHDL file "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/vhdl/d_ac97_axi.vhd" into library d_ac97_axi_v1_10_a
+Parsing entity <d_ac97_axi>.
+Parsing architecture <IMP> of entity <d_ac97_axi>.
+WARNING:HDLCompiler:439 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/vhdl/d_ac97_axi.vhd" Line 301: Formal port irq of mode buffer cannot be associated with actual port irq of mode out
+Parsing VHDL file "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/hdl/system_digilent_ac97_cntlr_wrapper.vhd" into library work
+Parsing entity <system_digilent_ac97_cntlr_wrapper>.
+Parsing architecture <STRUCTURE> of entity <system_digilent_ac97_cntlr_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <system_digilent_ac97_cntlr_wrapper> (architecture <STRUCTURE>) from library <work>.
+
+Elaborating entity <d_ac97_axi> (architecture <IMP>) with generics from library <d_ac97_axi_v1_10_a>.
+
+Elaborating entity <axi_lite_ipif> (architecture <imp>) with generics from library <axi_lite_ipif_v1_01_a>.
+
+Elaborating entity <slave_attachment> (architecture <imp>) with generics from library <axi_lite_ipif_v1_01_a>.
+
+Elaborating entity <address_decoder> (architecture <IMP>) with generics from library <axi_lite_ipif_v1_01_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+INFO:HDLCompiler:679 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" Line 417. Case statement is complete. others clause is never selected
+
+Elaborating entity <user_logic> (architecture <IMP>) with generics from library <d_ac97_axi_v1_10_a>.
+Going to verilog side to elaborate module ac97_controller
+
+Elaborating module <ac97_controller(START_DELAY=131000,WAIT_FOR_BITCLK_DELAY=3,Idle=0,Load=1,Send=2,Wait_until_Start=3)>.
+WARNING:HDLCompiler:413 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/verilog/ac97_controller.v" Line 89: Result of 18-bit expression is truncated to fit in 17-bit target.
+WARNING:HDLCompiler:413 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/verilog/ac97_controller.v" Line 98: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/verilog/ac97_controller.v" Line 102: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/verilog/ac97_controller.v" Line 105: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/verilog/ac97_controller.v" Line 115: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/verilog/ac97_controller.v" Line 126: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/verilog/ac97_controller.v" Line 130: Result of 32-bit expression is truncated to fit in 1-bit target.
+Back to vhdl to continue elaboration
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_digilent_ac97_cntlr_wrapper>.
+    Related source file is "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/hdl/system_digilent_ac97_cntlr_wrapper.vhd".
+    Summary:
+	no macro.
+Unit <system_digilent_ac97_cntlr_wrapper> synthesized.
+
+Synthesizing Unit <d_ac97_axi>.
+    Related source file is "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/vhdl/d_ac97_axi.vhd".
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+        C_S_AXI_DATA_WIDTH = 32
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
+        C_USE_WSTRB = 0
+        C_DPHASE_TIMEOUT = 8
+        C_BASEADDR = "01111101000000000000000000000000"
+        C_HIGHADDR = "01111101000000001111111111111111"
+        C_FAMILY = "spartan6"
+        C_NUM_REG = 1
+        C_NUM_MEM = 1
+        C_SLV_AWIDTH = 32
+        C_SLV_DWIDTH = 32
+    Set property "MAX_FANOUT = 10000" for signal <S_AXI_ACLK>.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "MAX_FANOUT = 10000" for signal <S_AXI_ARESETN>.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/vhdl/d_ac97_axi.vhd" line 237: Output port <Bus2IP_Addr> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/vhdl/d_ac97_axi.vhd" line 237: Output port <Bus2IP_CS> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/vhdl/d_ac97_axi.vhd" line 237: Output port <Bus2IP_RNW> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <d_ac97_axi> synthesized.
+
+Synthesizing Unit <axi_lite_ipif>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd".
+        C_S_AXI_DATA_WIDTH = 32
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
+        C_USE_WSTRB = 0
+        C_DPHASE_TIMEOUT = 8
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000001111101000000000000000000000000","0000000000000000000000000000000001111101000000001111111111111111")
+        C_ARD_NUM_CE_ARRAY = (8)
+        C_FAMILY = "spartan6"
+    Summary:
+	no macro.
+Unit <axi_lite_ipif> synthesized.
+
+Synthesizing Unit <slave_attachment>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd".
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000001111101000000000000000000000000","0000000000000000000000000000000001111101000000001111111111111111")
+        C_ARD_NUM_CE_ARRAY = (8)
+        C_IPIF_ABUS_WIDTH = 32
+        C_IPIF_DBUS_WIDTH = 32
+        C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
+        C_USE_WSTRB = 0
+        C_DPHASE_TIMEOUT = 8
+        C_FAMILY = "spartan6"
+WARNING:Xst:647 - Input <S_AXI_AWADDR<31:9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_WSTRB> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_ARADDR<31:9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" line 341: Output port <CS_for_gaps> of the instance <I_DECODER> is unconnected or connected to loadless signal.
+    Found 2-bit register for signal <state>.
+    Found 2-bit register for signal <s_axi_rresp_i>.
+    Found 32-bit register for signal <s_axi_rdata_i>.
+    Found 1-bit register for signal <s_axi_rvalid_i>.
+    Found 2-bit register for signal <s_axi_bresp_i>.
+    Found 1-bit register for signal <s_axi_bvalid_i>.
+    Found 4-bit register for signal <INCLUDE_DPHASE_TIMER.dpto_cnt>.
+    Found 1-bit register for signal <rst>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 4                                              |
+    | Clock              | S_AXI_ACLK (rising_edge)                       |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | sm_idle                                        |
+    | Power Up State     | sm_idle                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <INCLUDE_DPHASE_TIMER.dpto_cnt[3]_GND_14_o_add_31_OUT> created at line 507.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  43 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <slave_attachment> synthesized.
+
+Synthesizing Unit <address_decoder>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd".
+        C_BUS_AWIDTH = 9
+        C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000001111101000000000000000000000000","0000000000000000000000000000000001111101000000001111111111111111")
+        C_ARD_NUM_CE_ARRAY = (8)
+        C_FAMILY = "nofamily"
+WARNING:Xst:647 - Input <Address_In_Erly<0:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus_RNW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <Bus_RNW_reg>.
+    Found 1-bit register for signal <ce_out_i<0>>.
+    Found 1-bit register for signal <ce_out_i<1>>.
+    Found 1-bit register for signal <ce_out_i<2>>.
+    Found 1-bit register for signal <ce_out_i<3>>.
+    Found 1-bit register for signal <ce_out_i<4>>.
+    Found 1-bit register for signal <ce_out_i<5>>.
+    Found 1-bit register for signal <ce_out_i<6>>.
+    Found 1-bit register for signal <ce_out_i<7>>.
+    Found 1-bit register for signal <cs_out_i>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+Unit <address_decoder> synthesized.
+
+Synthesizing Unit <pselect_f_1>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "000"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_1> synthesized.
+
+Synthesizing Unit <pselect_f_2>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "001"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_2> synthesized.
+
+Synthesizing Unit <pselect_f_3>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "010"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_3> synthesized.
+
+Synthesizing Unit <pselect_f_4>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "011"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_4> synthesized.
+
+Synthesizing Unit <pselect_f_5>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "100"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_5> synthesized.
+
+Synthesizing Unit <pselect_f_6>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "101"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_6> synthesized.
+
+Synthesizing Unit <pselect_f_7>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "110"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_7> synthesized.
+
+Synthesizing Unit <pselect_f_8>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "111"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_8> synthesized.
+
+Synthesizing Unit <user_logic>.
+    Related source file is "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/vhdl/user_logic.vhd".
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+        C_NUM_REG = 8
+        C_SLV_DWIDTH = 32
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/vhdl/user_logic.vhd" line 245: Output port <Slot5_out> of the instance <ac97_controller_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/vhdl/user_logic.vhd" line 245: Output port <Slot6_out> of the instance <ac97_controller_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/vhdl/user_logic.vhd" line 245: Output port <Slot7_out> of the instance <ac97_controller_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/vhdl/user_logic.vhd" line 245: Output port <Slot8_out> of the instance <ac97_controller_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/vhdl/user_logic.vhd" line 245: Output port <Slot9_out> of the instance <ac97_controller_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/vhdl/user_logic.vhd" line 245: Output port <Slot10_out> of the instance <ac97_controller_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/vhdl/user_logic.vhd" line 245: Output port <Slot11_out> of the instance <ac97_controller_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/vhdl/user_logic.vhd" line 245: Output port <Slot12_out> of the instance <ac97_controller_I> is unconnected or connected to loadless signal.
+    Found 32-bit register for signal <DATA_REG>.
+    Found 32-bit register for signal <PCM_OUT_L>.
+    Found 32-bit register for signal <PCM_OUT_R>.
+    Found 32-bit register for signal <PCM_IN_L>.
+    Found 32-bit register for signal <PCM_IN_R>.
+    Found 32-bit register for signal <CONTROL>.
+    Found 32-bit register for signal <STATUS>.
+    Found 1-bit register for signal <IRQ>.
+    Found 32-bit register for signal <ADDR>.
+    Summary:
+	inferred 257 D-type flip-flop(s).
+	inferred 309 Multiplexer(s).
+Unit <user_logic> synthesized.
+
+Synthesizing Unit <ac97_controller>.
+    Related source file is "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/pcores/d_ac97_axi_v1_10_a/hdl/verilog/ac97_controller.v".
+        START_DELAY = 131000
+        WAIT_FOR_BITCLK_DELAY = 3
+        Idle = 0
+        Load = 1
+        Send = 2
+        Wait_until_Start = 3
+    Found 2-bit register for signal <StC>.
+    Found 2-bit register for signal <Wait_for_BITCLK>.
+    Found 1-bit register for signal <Reset_Ready>.
+    Found 3-bit register for signal <Frame_Done_reg>.
+    Found 10-bit register for signal <Increment>.
+    Found 256-bit register for signal <Data_reg_in>.
+    Found 256-bit register for signal <Data_reg_out>.
+    Found 16-bit register for signal <Slot0_out>.
+    Found 20-bit register for signal <Slot1_out>.
+    Found 20-bit register for signal <Slot2_out>.
+    Found 20-bit register for signal <Slot3_out>.
+    Found 20-bit register for signal <Slot4_out>.
+    Found 20-bit register for signal <Slot5_out>.
+    Found 20-bit register for signal <Slot6_out>.
+    Found 20-bit register for signal <Slot7_out>.
+    Found 20-bit register for signal <Slot8_out>.
+    Found 20-bit register for signal <Slot9_out>.
+    Found 20-bit register for signal <Slot10_out>.
+    Found 20-bit register for signal <Slot11_out>.
+    Found 20-bit register for signal <Slot12_out>.
+    Found 17-bit register for signal <Var_start>.
+    Found finite state machine <FSM_1> for signal <StC>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 4                                              |
+    | Clock              | BIT_CLK (rising_edge)                          |
+    | Reset              | SYSTEM_RESET (positive)                        |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 17-bit adder for signal <Var_start[16]_GND_26_o_add_2_OUT> created at line 89.
+    Found 2-bit adder for signal <Wait_for_BITCLK[1]_GND_26_o_add_8_OUT> created at line 98.
+    Found 10-bit adder for signal <Increment[9]_GND_26_o_add_27_OUT> created at line 126.
+    Found 10-bit comparator greater for signal <Increment[9]_GND_26_o_LessThan_33_o> created at line 130
+    Found 10-bit comparator greater for signal <GND_26_o_Increment[9]_LessThan_34_o> created at line 130
+    Found 17-bit comparator greater for signal <Var_start[16]_PWR_26_o_LessThan_38_o> created at line 135
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred 801 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <ac97_controller> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 10-bit adder                                          : 1
+ 17-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 4-bit adder                                           : 1
+# Registers                                            : 46
+ 1-bit register                                        : 15
+ 10-bit register                                       : 1
+ 16-bit register                                       : 1
+ 17-bit register                                       : 1
+ 2-bit register                                        : 3
+ 20-bit register                                       : 12
+ 256-bit register                                      : 2
+ 3-bit register                                        : 1
+ 32-bit register                                       : 9
+ 4-bit register                                        : 1
+# Comparators                                          : 3
+ 10-bit comparator greater                             : 2
+ 17-bit comparator greater                             : 1
+# Multiplexers                                         : 320
+ 1-bit 2-to-1 multiplexer                              : 315
+ 10-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 4
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <ac97_controller>.
+The following registers are absorbed into counter <Var_start>: 1 register on signal <Var_start>.
+The following registers are absorbed into counter <Wait_for_BITCLK>: 1 register on signal <Wait_for_BITCLK>.
+The following registers are absorbed into counter <Increment>: 1 register on signal <Increment>.
+Unit <ac97_controller> synthesized (advanced).
+
+Synthesizing (advanced) Unit <slave_attachment>.
+The following registers are absorbed into counter <INCLUDE_DPHASE_TIMER.dpto_cnt>: 1 register on signal <INCLUDE_DPHASE_TIMER.dpto_cnt>.
+Unit <slave_attachment> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 4
+ 10-bit up counter                                     : 1
+ 17-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 1078
+ Flip-Flops                                            : 1078
+# Comparators                                          : 3
+ 10-bit comparator greater                             : 2
+ 17-bit comparator greater                             : 1
+# Multiplexers                                         : 311
+ 1-bit 2-to-1 multiplexer                              : 307
+ 32-bit 2-to-1 multiplexer                             : 4
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <s_axi_rresp_i_0> has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <s_axi_bresp_i_0> has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Data_reg_out_100> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_101> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_102> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_103> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_104> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_105> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_106> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_107> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_108> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_109> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_110> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_111> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_112> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_113> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_114> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_115> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_116> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_117> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_118> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_119> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_80> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_81> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_82> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_83> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_84> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_85> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_86> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_87> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_88> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_89> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_90> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_91> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_92> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_93> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_94> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_95> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_96> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_97> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_98> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_99> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_140> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_141> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_142> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_143> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_144> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_145> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_146> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_147> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_148> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_149> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_150> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_151> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_152> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_153> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_154> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_155> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_156> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_157> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_158> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_159> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_120> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_121> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_122> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_123> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_124> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_125> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_126> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_127> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_128> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_129> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_130> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_131> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_132> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_133> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_134> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_135> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_136> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_137> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_138> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_139> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_20> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_21> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_22> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_23> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_24> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_25> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_26> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_27> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_28> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_29> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_30> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_31> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_32> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_33> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_34> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_35> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_36> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_37> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_38> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_39> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_0> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_1> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_2> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_3> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_4> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_5> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_6> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_7> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_8> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_9> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_10> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_11> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_12> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_13> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_14> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_15> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_16> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_17> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_18> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_19> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_60> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_61> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_62> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_63> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_64> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_65> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_66> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_67> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_68> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_69> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_70> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_71> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_72> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_73> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_74> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_75> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_76> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_77> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_78> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_79> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_40> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_41> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_42> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_43> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_44> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_45> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_46> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_47> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_48> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_49> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_50> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_51> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_52> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_53> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_54> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_55> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_56> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_57> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_58> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Data_reg_out_59> has a constant value of 0 in block <ac97_controller>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/FSM_0> on signal <state[1:2]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ sm_idle  | 00
+ sm_read  | 01
+ sm_write | 10
+ sm_resp  | 11
+----------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/FSM_1> on signal <StC[1:2]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 11    | 01
+ 10    | 10
+ 01    | 11
+-------------------
+
+Optimizing unit <system_digilent_ac97_cntlr_wrapper> ...
+
+Optimizing unit <slave_attachment> ...
+
+Optimizing unit <address_decoder> ...
+
+Optimizing unit <user_logic> ...
+
+Optimizing unit <ac97_controller> ...
+WARNING:Xst:1293 - FF/Latch <Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_1> has a constant value of 0 in block <system_digilent_ac97_cntlr_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_1> has a constant value of 0 in block <system_digilent_ac97_cntlr_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot12_out_19> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot12_out_18> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot12_out_17> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot12_out_16> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot12_out_15> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot12_out_14> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot12_out_13> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot12_out_12> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot12_out_11> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot12_out_10> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot12_out_9> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot12_out_8> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot12_out_7> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot12_out_6> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot12_out_5> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot12_out_4> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot12_out_3> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot12_out_2> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot12_out_1> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot12_out_0> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot11_out_19> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot11_out_18> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot11_out_17> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot11_out_16> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot11_out_15> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot11_out_14> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot11_out_13> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot11_out_12> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot11_out_11> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot11_out_10> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot11_out_9> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot11_out_8> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot11_out_7> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot11_out_6> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot11_out_5> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot11_out_4> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot11_out_3> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot11_out_2> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot11_out_1> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot11_out_0> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot9_out_19> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot9_out_18> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot9_out_17> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot9_out_16> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot9_out_15> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot9_out_14> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot9_out_13> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot9_out_12> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot9_out_11> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot9_out_10> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot9_out_9> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot9_out_8> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot9_out_7> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot9_out_6> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot9_out_5> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot9_out_4> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot9_out_3> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot9_out_2> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot9_out_1> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot9_out_0> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot8_out_19> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot8_out_18> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot8_out_17> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot8_out_16> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot8_out_15> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot8_out_14> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot8_out_13> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot8_out_12> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot8_out_11> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot8_out_10> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot8_out_9> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot8_out_8> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot8_out_7> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot8_out_6> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot8_out_5> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot8_out_4> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot8_out_3> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot8_out_2> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot8_out_1> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot8_out_0> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot10_out_19> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot10_out_18> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot10_out_17> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot10_out_16> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot10_out_15> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot10_out_14> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot10_out_13> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot10_out_12> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot10_out_11> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot10_out_10> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot10_out_9> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot10_out_8> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot10_out_7> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot10_out_6> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot10_out_5> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot10_out_4> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot10_out_3> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot10_out_2> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot10_out_1> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot10_out_0> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot6_out_19> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot6_out_18> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot6_out_17> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot6_out_16> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot6_out_15> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot6_out_14> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot6_out_13> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot6_out_12> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot6_out_11> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot6_out_10> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot6_out_9> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot6_out_8> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot6_out_7> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot6_out_6> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot6_out_5> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot6_out_4> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot6_out_3> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot6_out_2> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot6_out_1> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot6_out_0> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot5_out_19> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot5_out_18> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot5_out_17> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot5_out_16> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot5_out_15> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot5_out_14> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot5_out_13> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot5_out_12> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot5_out_11> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot5_out_10> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot5_out_9> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot5_out_8> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot5_out_7> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot5_out_6> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot5_out_5> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot5_out_4> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot5_out_3> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot5_out_2> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot5_out_1> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot5_out_0> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot7_out_19> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot7_out_18> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot7_out_17> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot7_out_16> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot7_out_15> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot7_out_14> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot7_out_13> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot7_out_12> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot7_out_11> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot7_out_10> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot7_out_9> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot7_out_8> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot7_out_7> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot7_out_6> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot7_out_5> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot7_out_4> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot7_out_3> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot7_out_2> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot7_out_1> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot7_out_0> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot2_out_3> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot2_out_2> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot2_out_1> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot2_out_0> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot1_out_19> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot1_out_1> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Slot1_out_0> of sequential type is unconnected in block <system_digilent_ac97_cntlr_wrapper>.
+WARNING:Xst:1293 - FF/Latch <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Increment_9> has a constant value of 0 in block <system_digilent_ac97_cntlr_wrapper>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_digilent_ac97_cntlr_wrapper, actual ratio is 4.
+FlipFlop Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg has been replicated 4 time(s)
+FlipFlop Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1 has been replicated 1 time(s)
+FlipFlop Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_2 has been replicated 1 time(s)
+FlipFlop Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_4 has been replicated 1 time(s)
+FlipFlop Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_5 has been replicated 2 time(s)
+FlipFlop Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_6 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <system_digilent_ac97_cntlr_wrapper> :
+	Found 5-bit shift register for signal <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Data_reg_in_204>.
+	Found 161-bit shift register for signal <Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Data_reg_in_160>.
+Unit <system_digilent_ac97_cntlr_wrapper> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 627
+ Flip-Flops                                            : 627
+# Shift Registers                                      : 2
+ 161-bit shift register                                : 1
+ 5-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_digilent_ac97_cntlr_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 839
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 17
+#      LUT2                        : 59
+#      LUT3                        : 80
+#      LUT4                        : 89
+#      LUT5                        : 163
+#      LUT6                        : 370
+#      MUXCY                       : 24
+#      MUXF7                       : 4
+#      VCC                         : 1
+#      XORCY                       : 26
+# FlipFlops/Latches                : 791
+#      FD                          : 116
+#      FDC                         : 2
+#      FDE                         : 91
+#      FDR                         : 262
+#      FDRE                        : 320
+# Shift Registers                  : 6
+#      SRLC16E                     : 1
+#      SRLC32E                     : 5
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             791  out of  54576     1%  
+ Number of Slice LUTs:                  789  out of  27288     2%  
+    Number used as Logic:               783  out of  27288     2%  
+    Number used as Memory:                6  out of   6408     0%  
+       Number used as SRL:                6
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1195
+   Number with an unused Flip Flop:     404  out of   1195    33%  
+   Number with an unused LUT:           406  out of   1195    33%  
+   Number of fully used LUT-FF pairs:   385  out of   1195    32%  
+   Number of unique control sets:        19
+
+IO Utilization: 
+ Number of IOs:                         154
+ Number of bonded IOBs:                   0  out of    218     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                      | Load  |
+-----------------------------------+----------------------------------------------------------------------------+-------+
+S_AXI_ACLK                         | NONE(Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1)| 427   |
+BITCLK                             | NONE(Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Increment_8)       | 370   |
+-----------------------------------+----------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 6.313ns (Maximum Frequency: 158.407MHz)
+   Minimum input arrival time before clock: 3.155ns
+   Maximum output required time after clock: 5.794ns
+   Maximum combinational path delay: 2.504ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'S_AXI_ACLK'
+  Clock period: 6.313ns (frequency: 158.407MHz)
+  Total number of paths / destination ports: 23709 / 461
+-------------------------------------------------------------------------
+Delay:               6.313ns (Levels of Logic = 6)
+  Source:            Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_3 (FF)
+  Destination:       Digilent_AC97_Cntlr/USER_LOGIC_I/PCM_IN_R_3 (FF)
+  Source Clock:      S_AXI_ACLK rising
+  Destination Clock: S_AXI_ACLK rising
+
+  Data Path: Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_3 to Digilent_AC97_Cntlr/USER_LOGIC_I/PCM_IN_R_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              19   0.447   1.072  Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_3 (Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_3)
+     LUT2:I1->O            4   0.205   1.048  Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i<3>1 (Digilent_AC97_Cntlr/ipif_Bus2IP_WrCE<4>)
+     LUT6:I0->O            1   0.203   0.000  Digilent_AC97_Cntlr/USER_LOGIC_I/GND_24_o_slv_reg_write_sel[7]_equal_16_o<7>21_1_F (N666)
+     MUXF7:I0->O           2   0.131   0.617  Digilent_AC97_Cntlr/USER_LOGIC_I/GND_24_o_slv_reg_write_sel[7]_equal_16_o<7>21_1 (Digilent_AC97_Cntlr/USER_LOGIC_I/GND_24_o_slv_reg_write_sel[7]_equal_16_o<7>21)
+     LUT4:I3->O            2   0.205   0.617  Digilent_AC97_Cntlr/USER_LOGIC_I/_n0502_SW0 (N176)
+     LUT6:I5->O           17   0.205   1.256  Digilent_AC97_Cntlr/USER_LOGIC_I/_n0502 (Digilent_AC97_Cntlr/USER_LOGIC_I/_n0502)
+     LUT6:I3->O            1   0.205   0.000  Digilent_AC97_Cntlr/USER_LOGIC_I/PWR_24_o_PCM_IN_R[31]_select_28_OUT<31> (Digilent_AC97_Cntlr/USER_LOGIC_I/PWR_24_o_PCM_IN_R[31]_select_28_OUT<0>)
+     FDR:D                     0.102          Digilent_AC97_Cntlr/USER_LOGIC_I/PCM_IN_R_0
+    ----------------------------------------
+    Total                      6.313ns (1.703ns logic, 4.610ns route)
+                                       (27.0% logic, 73.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'BITCLK'
+  Clock period: 5.794ns (frequency: 172.596MHz)
+  Total number of paths / destination ports: 2333 / 384
+-------------------------------------------------------------------------
+Delay:               5.794ns (Levels of Logic = 4)
+  Source:            Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Increment_7 (FF)
+  Destination:       Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Data_reg_out_255 (FF)
+  Source Clock:      BITCLK rising
+  Destination Clock: BITCLK rising
+
+  Data Path: Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Increment_7 to Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Data_reg_out_255
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.447   0.864  Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Increment_7 (Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Increment_7)
+     LUT4:I0->O            6   0.203   0.745  Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Increment[9]_GND_26_o_OR_75_o21 (Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/GND_26_o_GND_26_o_equal_49_o<9>1)
+     LUT6:I5->O           19   0.205   1.072  Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/StC_FSM_FFd2-In1_SW0 (N660)
+     LUT6:I5->O           80   0.205   1.746  Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/StC_FSM_FFd2-In1 (Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/StC_FSM_FFd2-In)
+     LUT6:I5->O            1   0.205   0.000  Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/_n0283<161>1 (Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/_n0283<161>)
+     FD:D                      0.102          Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Data_reg_out_161
+    ----------------------------------------
+    Total                      5.794ns (1.367ns logic, 4.427ns route)
+                                       (23.6% logic, 76.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXI_ACLK'
+  Total number of paths / destination ports: 825 / 559
+-------------------------------------------------------------------------
+Offset:              3.155ns (Levels of Logic = 3)
+  Source:            S_AXI_AWVALID (PAD)
+  Destination:       Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_5_1 (FF)
+  Destination Clock: S_AXI_ACLK rising
+
+  Data Path: S_AXI_AWVALID to Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_5_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT5:I2->O           21   0.205   1.458  Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/Mmux_start11 (Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/start)
+     LUT6:I1->O            3   0.203   0.755  Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_expnd_i<5>1 (Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_expnd_i<5>)
+     LUT4:I2->O            1   0.203   0.000  Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_5_1_rstpot (Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_5_1_rstpot)
+     FD:D                      0.102          Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_5_1
+    ----------------------------------------
+    Total                      3.155ns (0.942ns logic, 2.213ns route)
+                                       (29.9% logic, 70.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'BITCLK'
+  Total number of paths / destination ports: 82 / 82
+-------------------------------------------------------------------------
+Offset:              2.704ns (Levels of Logic = 1)
+  Source:            S_AXI_ARESETN (PAD)
+  Destination:       Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/StC_FSM_FFd1 (FF)
+  Destination Clock: BITCLK rising
+
+  Data Path: S_AXI_ARESETN to Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/StC_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     INV:I->O            277   0.206   2.068  Digilent_AC97_Cntlr/USER_LOGIC_I/Bus2IP_Reset1_INV_0 (Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_rstpot)
+     FDC:CLR                   0.430          Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/StC_FSM_FFd2
+    ----------------------------------------
+    Total                      2.704ns (0.636ns logic, 2.068ns route)
+                                       (23.5% logic, 76.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'S_AXI_ACLK'
+  Total number of paths / destination ports: 83 / 39
+-------------------------------------------------------------------------
+Offset:              3.415ns (Levels of Logic = 2)
+  Source:            Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_6 (FF)
+  Destination:       S_AXI_WREADY (PAD)
+  Source Clock:      S_AXI_ACLK rising
+
+  Data Path: Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_6 to S_AXI_WREADY
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              49   0.447   1.638  Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_6 (Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_6)
+     LUT2:I0->O            1   0.203   0.924  Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done1_SW0 (N656)
+     LUT6:I1->O            2   0.203   0.000  Digilent_AC97_Cntlr/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done1 (S_AXI_AWREADY)
+    ----------------------------------------
+    Total                      3.415ns (0.853ns logic, 2.562ns route)
+                                       (25.0% logic, 75.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'BITCLK'
+  Total number of paths / destination ports: 26 / 2
+-------------------------------------------------------------------------
+Offset:              5.794ns (Levels of Logic = 4)
+  Source:            Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Increment_7 (FF)
+  Destination:       SYNC (PAD)
+  Source Clock:      BITCLK rising
+
+  Data Path: Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Increment_7 to SYNC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.447   0.864  Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Increment_7 (Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Increment_7)
+     LUT4:I0->O            6   0.203   0.745  Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Increment[9]_GND_26_o_OR_75_o21 (Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/GND_26_o_GND_26_o_equal_49_o<9>1)
+     LUT6:I5->O           19   0.205   1.072  Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/StC_FSM_FFd2-In1_SW0 (N660)
+     LUT6:I5->O           80   0.205   1.850  Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/StC_FSM_FFd2-In1 (Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/StC_FSM_FFd2-In)
+     LUT6:I4->O            0   0.203   0.000  Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Increment[9]_GND_26_o_OR_75_o (SYNC)
+    ----------------------------------------
+    Total                      5.794ns (1.263ns logic, 4.531ns route)
+                                       (21.8% logic, 78.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.504ns (Levels of Logic = 2)
+  Source:            S_AXI_ARESETN (PAD)
+  Destination:       SYNC (PAD)
+
+  Data Path: S_AXI_ARESETN to SYNC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT6:I2->O           80   0.203   1.850  Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/StC_FSM_FFd2-In1 (Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/StC_FSM_FFd2-In)
+     LUT6:I4->O            0   0.203   0.000  Digilent_AC97_Cntlr/USER_LOGIC_I/ac97_controller_I/Increment[9]_GND_26_o_OR_75_o (SYNC)
+    ----------------------------------------
+    Total                      2.504ns (0.654ns logic, 1.850ns route)
+                                       (26.1% logic, 73.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock BITCLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+BITCLK         |    5.794|         |         |         |
+S_AXI_ACLK     |    7.091|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock S_AXI_ACLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+BITCLK         |    4.761|         |         |         |
+S_AXI_ACLK     |    6.313|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.20 secs
+ 
+--> 
+
+
+Total memory usage is 517668 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  354 (   0 filtered)
+Number of infos    :   13 (   0 filtered)
+

@@ -1,0 +1,48 @@
+
+<RENDERBATCH>
+
+  <RENDERIMG RASNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/proc_sys_reset_0.jpg" SVGNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/proc_sys_reset_0.svg" TMPSVGFN="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/__xps/.dswkshop/proc_sys_reset_0.svg"/>
+
+  <RENDERIMG RASNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/microblaze_0_intc.jpg" SVGNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/microblaze_0_intc.svg" TMPSVGFN="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/__xps/.dswkshop/microblaze_0_intc.svg"/>
+
+  <RENDERIMG RASNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/microblaze_0_ilmb.jpg" SVGNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/microblaze_0_ilmb.svg" TMPSVGFN="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/__xps/.dswkshop/microblaze_0_ilmb.svg"/>
+
+  <RENDERIMG RASNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/microblaze_0_i_bram_ctrl.jpg" SVGNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/microblaze_0_i_bram_ctrl.svg" TMPSVGFN="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/__xps/.dswkshop/microblaze_0_i_bram_ctrl.svg"/>
+
+  <RENDERIMG RASNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/microblaze_0_dlmb.jpg" SVGNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/microblaze_0_dlmb.svg" TMPSVGFN="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/__xps/.dswkshop/microblaze_0_dlmb.svg"/>
+
+  <RENDERIMG RASNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/microblaze_0_d_bram_ctrl.jpg" SVGNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/microblaze_0_d_bram_ctrl.svg" TMPSVGFN="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/__xps/.dswkshop/microblaze_0_d_bram_ctrl.svg"/>
+
+  <RENDERIMG RASNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/microblaze_0_bram_block.jpg" SVGNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/microblaze_0_bram_block.svg" TMPSVGFN="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/__xps/.dswkshop/microblaze_0_bram_block.svg"/>
+
+  <RENDERIMG RASNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/microblaze_0.jpg" SVGNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/microblaze_0.svg" TMPSVGFN="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/__xps/.dswkshop/microblaze_0.svg"/>
+
+  <RENDERIMG RASNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/debug_module.jpg" SVGNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/debug_module.svg" TMPSVGFN="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/__xps/.dswkshop/debug_module.svg"/>
+
+  <RENDERIMG RASNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/clock_generator_0.jpg" SVGNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/clock_generator_0.svg" TMPSVGFN="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/__xps/.dswkshop/clock_generator_0.svg"/>
+
+  <RENDERIMG RASNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/axi4lite_0.jpg" SVGNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/axi4lite_0.svg" TMPSVGFN="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/__xps/.dswkshop/axi4lite_0.svg"/>
+
+  <RENDERIMG RASNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/axi4_0.jpg" SVGNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/axi4_0.svg" TMPSVGFN="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/__xps/.dswkshop/axi4_0.svg"/>
+
+  <RENDERIMG RASNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/RS232_Uart_1.jpg" SVGNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/RS232_Uart_1.svg" TMPSVGFN="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/__xps/.dswkshop/RS232_Uart_1.svg"/>
+
+  <RENDERIMG RASNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/Push_Buttons_5Bits.jpg" SVGNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/Push_Buttons_5Bits.svg" TMPSVGFN="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/__xps/.dswkshop/Push_Buttons_5Bits.svg"/>
+
+  <RENDERIMG RASNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/MCB_DDR2.jpg" SVGNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/MCB_DDR2.svg" TMPSVGFN="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/__xps/.dswkshop/MCB_DDR2.svg"/>
+
+  <RENDERIMG RASNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/LEDs_8Bits.jpg" SVGNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/LEDs_8Bits.svg" TMPSVGFN="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/__xps/.dswkshop/LEDs_8Bits.svg"/>
+
+  <RENDERIMG RASNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/DIP_Switches_8Bits.jpg" SVGNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/DIP_Switches_8Bits.svg" TMPSVGFN="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/__xps/.dswkshop/DIP_Switches_8Bits.svg"/>
+
+  <RENDERIMG RASNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/Digilent_AC97_Cntlr.jpg" SVGNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/Digilent_AC97_Cntlr.svg" TMPSVGFN="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/__xps/.dswkshop/Digilent_AC97_Cntlr.svg"/>
+
+  <RENDERIMG RASNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/Digilent_AC97_Cntlr_1.jpg" SVGNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/Digilent_AC97_Cntlr_1.svg" TMPSVGFN="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/__xps/.dswkshop/Digilent_AC97_Cntlr_1.svg"/>
+
+  <RENDERIMG RASNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/axi_timer_0.jpg" SVGNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/axi_timer_0.svg" TMPSVGFN="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/__xps/.dswkshop/axi_timer_0.svg"/>
+
+  <RENDERIMG RASNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/nc_test_0.jpg" SVGNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/nc_test_0.svg" TMPSVGFN="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/__xps/.dswkshop/nc_test_0.svg"/>
+
+  <RENDERIMG RASNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/system_blkd.jpg" SVGNAME="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/imgs/system_blkd.svg" TMPSVGFN="/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/__xps/.dswkshop/system_blkd.svg"/>
+
+</RENDERBATCH>

@@ -1,0 +1,538 @@
+07:01:17 **** Clean-only build of configuration Debug for project measure ****
+make clean 
+rm -rf  ./src/New_Algo.o ./src/ac97.o ./src/ac97_demo.o ./src/ac97_irq.o ./src/mul_complex.o ./src/platform.o  ./New_Algo.o ./ac97.o ./ac97_demo.o ./ac97_irq.o ./mul_complex.o ./platform.o  ./src/New_Algo.d ./src/ac97.d ./src/ac97_demo.d ./src/ac97_irq.d ./src/mul_complex.d ./src/platform.d  ./New_Algo.d ./ac97.d ./ac97_demo.d ./ac97_irq.d ./mul_complex.d ./platform.d  measure.elf.size  measure.elf.elfcheck  measure.elf
+ 
+07:01:18 **** Clean-only build of project noiseCancer_bsp ****
+make -k clean 
+rm -rf microblaze_0
+07:04:42 **** Build of project noiseCancer_bsp ****
+make -k all 
+libgen -hw ../project_hw_platform/system.xml\
+       -lp /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project\
+       -pe microblaze_0 \
+       -log libgen.log \
+       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../project_hw_platform/system.xml -lp
+/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project -pe
+microblaze_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mhard-float -mcpu=v8.50.c  -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"'.
+
+Running libs - 'gmake -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mhard-float -mcpu=v8.50.c  -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"'.
+Compiling common
+Compiling standalone
+Compiling tmrctr
+Compiling uartlite
+Compiling gpio
+Compiling bram
+Compiling intc
+Compiling nc_test
+Compiling cpu
+Running execs_generate.
+Finished building libraries
+07:04:48 **** Build of configuration Debug for project measure ****
+make all 
+Building file: ../src/New_Algo.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/New_Algo.d" -MT"src/New_Algo.d" -o "src/New_Algo.o" "../src/New_Algo.c"
+Finished building: ../src/New_Algo.c
+ 
+Building file: ../src/ac97.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ac97.d" -MT"src/ac97.d" -o "src/ac97.o" "../src/ac97.c"
+../src/ac97.c: In function 'AC97_Select_Input':
+../src/ac97.c:218:9: warning: variable 'DATA' set but not used [-Wunused-but-set-variable]
+../src/ac97.c: In function 'GenSquare':
+../src/ac97.c:322:10: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+../src/ac97.c:320:10: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+../src/ac97.c: In function 'Get_Sample_Rate':
+../src/ac97.c:425:10: warning: variable 'read_VRA' set but not used [-Wunused-but-set-variable]
+Finished building: ../src/ac97.c
+ 
+Building file: ../src/ac97_demo.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ac97_demo.d" -MT"src/ac97_demo.d" -o "src/ac97_demo.o" "../src/ac97_demo.c"
+../src/ac97_demo.c: In function 'AC97Handler':
+../src/ac97_demo.c:492:9: warning: unused variable 'aac97' [-Wunused-variable]
+Finished building: ../src/ac97_demo.c
+ 
+Building file: ../src/ac97_irq.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ac97_irq.d" -MT"src/ac97_irq.d" -o "src/ac97_irq.o" "../src/ac97_irq.c"
+Finished building: ../src/ac97_irq.c
+ 
+Building file: ../src/mul_complex.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mul_complex.d" -MT"src/mul_complex.d" -o "src/mul_complex.o" "../src/mul_complex.c"
+Finished building: ../src/mul_complex.c
+make: *** No rule to make target `New_Algo.o', needed by `measure.elf'.  Stop.
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+07:14:08 **** Build of configuration Debug for project noiseCancer ****
+make all 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/New_Algo.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/New_Algo.d" -MT"src/New_Algo.d" -o "src/New_Algo.o" "../src/New_Algo.c"
+Finished building: ../src/New_Algo.c
+ 
+Building file: ../src/ac97.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ac97.d" -MT"src/ac97.d" -o "src/ac97.o" "../src/ac97.c"
+../src/ac97.c: In function 'AC97_Select_Input':
+Finished building: ../src/ac97.c
+../src/ac97.c:218:9: warning: variable 'DATA' set but not used [-Wunused-but-set-variable]
+ 
+Building file: ../src/ac97_demo.c
+../src/ac97.c: In function 'GenSquare':
+../src/ac97.c:322:10: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+Invoking: MicroBlaze gcc compiler
+../src/ac97.c:320:10: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ac97_demo.d" -MT"src/ac97_demo.d" -o "src/ac97_demo.o" "../src/ac97_demo.c"
+../src/ac97.c: In function 'Get_Sample_Rate':
+../src/ac97.c:425:10: warning: variable 'read_VRA' set but not used [-Wunused-but-set-variable]
+../src/ac97_demo.c: In function 'AC97Handler':
+../src/ac97_demo.c:492:9: warning: unused variable 'aac97' [-Wunused-variable]
+Finished building: ../src/ac97_demo.c
+ 
+Building file: ../src/ac97_irq.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ac97_irq.d" -MT"src/ac97_irq.d" -o "src/ac97_irq.o" "../src/ac97_irq.c"
+Finished building: ../src/ac97_irq.c
+ 
+Building file: ../src/mul_complex.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mul_complex.d" -MT"src/mul_complex.d" -o "src/mul_complex.o" "../src/mul_complex.c"
+Finished building: ../src/mul_complex.c
+ 
+Building target: noiseCancer.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../noiseCancer_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "noiseCancer.elf"  ./src/New_Algo.o ./src/ac97.o ./src/ac97_demo.o ./src/ac97_irq.o ./src/helloworld.o ./src/mul_complex.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/noiseCancer/Debug/../src/helloworld.c:42: multiple definition of `main'
+./src/ac97_demo.o:/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/noiseCancer/Debug/../src/ac97_demo.c:243: first defined here
+collect2: ld returned 1 exit status
+make: *** [noiseCancer.elf] Error 1
+07:14:56 **** Clean-only build of configuration Debug for project noiseCancer ****
+make clean 
+rm -rf  ./src/New_Algo.o ./src/ac97.o ./src/ac97_demo.o ./src/ac97_irq.o ./src/helloworld.o ./src/mul_complex.o ./src/platform.o  ./src/New_Algo.d ./src/ac97.d ./src/ac97_demo.d ./src/ac97_irq.d ./src/helloworld.d ./src/mul_complex.d ./src/platform.d  noiseCancer.elf.size  noiseCancer.elf.elfcheck  noiseCancer.elf
+ 
+07:14:56 **** Incremental Build of configuration Debug for project noiseCancer ****
+make all 
+Building file: ../src/New_Algo.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/New_Algo.d" -MT"src/New_Algo.d" -o "src/New_Algo.o" "../src/New_Algo.c"
+Finished building: ../src/New_Algo.c
+ 
+Building file: ../src/ac97.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ac97.d" -MT"src/ac97.d" -o "src/ac97.o" "../src/ac97.c"
+../src/ac97.c: In function 'AC97_Select_Input':
+../src/ac97.c:218:9: warning: variable 'DATA' set but not used [-Wunused-but-set-variable]
+../src/ac97.c: In function 'GenSquare':
+../src/ac97.c:322:10: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+../src/ac97.c:320:10: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+Finished building: ../src/ac97.c
+../src/ac97.c: In function 'Get_Sample_Rate':
+ 
+../src/ac97.c:425:10: warning: variable 'read_VRA' set but not used [-Wunused-but-set-variable]
+Building file: ../src/ac97_demo.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ac97_demo.d" -MT"src/ac97_demo.d" -o "src/ac97_demo.o" "../src/ac97_demo.c"
+../src/ac97_demo.c: In function 'AC97Handler':
+../src/ac97_demo.c:492:9: warning: unused variable 'aac97' [-Wunused-variable]
+Finished building: ../src/ac97_demo.c
+ 
+Building file: ../src/ac97_irq.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ac97_irq.d" -MT"src/ac97_irq.d" -o "src/ac97_irq.o" "../src/ac97_irq.c"
+Finished building: ../src/ac97_irq.c
+ 
+Building file: ../src/mul_complex.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mul_complex.d" -MT"src/mul_complex.d" -o "src/mul_complex.o" "../src/mul_complex.c"
+Finished building: ../src/mul_complex.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: noiseCancer.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../noiseCancer_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "noiseCancer.elf"  ./src/New_Algo.o ./src/ac97.o ./src/ac97_demo.o ./src/ac97_irq.o ./src/mul_complex.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: noiseCancer.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size noiseCancer.elf  |tee "noiseCancer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17712	    448	   3088	  21248	   5300	noiseCancer.elf
+Finished building: noiseCancer.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck noiseCancer.elf -hw ../../project_hw_platform/system.xml -pe microblaze_0  |tee "noiseCancer.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../project_hw_platform/system.xml -pe microblaze_0
+noiseCancer.elf 
+
+ELF file	: noiseCancer.elf
+elfcheck passed.
+Finished building: noiseCancer.elf.elfcheck
+ 
+07:17:30 **** Clean-only build of configuration Debug for project noiseCancer ****
+make clean 
+rm -rf  ./src/New_Algo.o ./src/ac97.o ./src/ac97_demo.o ./src/ac97_irq.o ./src/mul_complex.o ./src/platform.o  ./src/New_Algo.d ./src/ac97.d ./src/ac97_demo.d ./src/ac97_irq.d ./src/mul_complex.d ./src/platform.d  noiseCancer.elf.size  noiseCancer.elf.elfcheck  noiseCancer.elf
+ 
+07:17:30 **** Incremental Build of configuration Debug for project noiseCancer ****
+make all 
+Building file: ../src/New_Algo.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/New_Algo.d" -MT"src/New_Algo.d" -o "src/New_Algo.o" "../src/New_Algo.c"
+Finished building: ../src/New_Algo.c
+ 
+Building file: ../src/ac97.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ac97.d" -MT"src/ac97.d" -o "src/ac97.o" "../src/ac97.c"
+../src/ac97.c: In function 'AC97_Select_Input':
+../src/ac97.c:218:9: warning: variable 'DATA' set but not used [-Wunused-but-set-variable]
+../src/ac97.c: In function 'GenSquare':
+../src/ac97.c:322:10: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+Finished building: ../src/ac97.c
+../src/ac97.c:320:10: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+ 
+../src/ac97.c: In function 'Get_Sample_Rate':
+Building file: ../src/ac97_demo.c
+../src/ac97.c:425:10: warning: variable 'read_VRA' set but not used [-Wunused-but-set-variable]
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ac97_demo.d" -MT"src/ac97_demo.d" -o "src/ac97_demo.o" "../src/ac97_demo.c"
+../src/ac97_demo.c: In function 'AC97Handler':
+Finished building: ../src/ac97_demo.c
+../src/ac97_demo.c:492:9: warning: unused variable 'aac97' [-Wunused-variable]
+ 
+Building file: ../src/ac97_irq.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ac97_irq.d" -MT"src/ac97_irq.d" -o "src/ac97_irq.o" "../src/ac97_irq.c"
+Finished building: ../src/ac97_irq.c
+ 
+Building file: ../src/mul_complex.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mul_complex.d" -MT"src/mul_complex.d" -o "src/mul_complex.o" "../src/mul_complex.c"
+Finished building: ../src/mul_complex.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+/opt/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld: noiseCancer.elf section `.text' will not fit in region `microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl'
+ 
+Building target: noiseCancer.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../noiseCancer_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "noiseCancer.elf"  ./src/New_Algo.o ./src/ac97.o ./src/ac97_demo.o ./src/ac97_irq.o ./src/mul_complex.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+/opt/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld: region `microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl' overflowed by 4912 bytes
+collect2: ld returned 1 exit status
+make: *** [noiseCancer.elf] Error 1
+07:23:54 **** Build of project noiseCancer_bsp ****
+make -k all 
+Finished building libraries
+07:23:54 **** Clean-only build of configuration Debug for project noiseCancer ****
+make clean 
+rm -rf  ./src/New_Algo.o ./src/ac97.o ./src/ac97_demo.o ./src/ac97_irq.o ./src/mul_complex.o ./src/platform.o  ./src/New_Algo.d ./src/ac97.d ./src/ac97_demo.d ./src/ac97_irq.d ./src/mul_complex.d ./src/platform.d  noiseCancer.elf.size  noiseCancer.elf.elfcheck  noiseCancer.elf
+ 
+07:23:54 **** Build of configuration Debug for project noiseCancer ****
+make all 
+Building file: ../src/New_Algo.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/New_Algo.d" -MT"src/New_Algo.d" -o "src/New_Algo.o" "../src/New_Algo.c"
+Finished building: ../src/New_Algo.c
+ 
+Building file: ../src/ac97.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ac97.d" -MT"src/ac97.d" -o "src/ac97.o" "../src/ac97.c"
+../src/ac97.c: In function 'AC97_Select_Input':
+Finished building: ../src/ac97.c
+../src/ac97.c:218:9: warning: variable 'DATA' set but not used [-Wunused-but-set-variable]
+../src/ac97.c: In function 'GenSquare':
+../src/ac97.c:322:10: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+../src/ac97.c:320:10: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+ 
+../src/ac97.c: In function 'Get_Sample_Rate':
+../src/ac97.c:425:10: warning: variable 'read_VRA' set but not used [-Wunused-but-set-variable]
+Building file: ../src/ac97_demo.c
+Invoking: MicroBlaze gcc compiler
+../src/ac97_demo.c: In function 'AC97Handler':
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ac97_demo.d" -MT"src/ac97_demo.d" -o "src/ac97_demo.o" "../src/ac97_demo.c"
+Finished building: ../src/ac97_demo.c
+ 
+../src/ac97_demo.c:492:9: warning: unused variable 'aac97' [-Wunused-variable]
+Building file: ../src/ac97_irq.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ac97_irq.d" -MT"src/ac97_irq.d" -o "src/ac97_irq.o" "../src/ac97_irq.c"
+Finished building: ../src/ac97_irq.c
+ 
+Building file: ../src/mul_complex.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mul_complex.d" -MT"src/mul_complex.d" -o "src/mul_complex.o" "../src/mul_complex.c"
+Finished building: ../src/mul_complex.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: noiseCancer.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../lscript.ld -L../../noiseCancer_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "noiseCancer.elf"  ./src/New_Algo.o ./src/ac97.o ./src/ac97_demo.o ./src/ac97_irq.o ./src/mul_complex.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: noiseCancer.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size noiseCancer.elf  |tee "noiseCancer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17712	    448	  42000	  60160	   eb00	noiseCancer.elf
+Finished building: noiseCancer.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck noiseCancer.elf -hw ../../project_hw_platform/system.xml -pe microblaze_0  |tee "noiseCancer.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../project_hw_platform/system.xml -pe microblaze_0
+noiseCancer.elf 
+
+ELF file	: noiseCancer.elf
+elfcheck passed.
+Finished building: noiseCancer.elf.elfcheck
+ 
+07:25:45 **** Incremental Build of configuration Debug for project noiseCancer ****
+make all 
+make: Nothing to be done for `all'.
+07:26:43 **** Incremental Build of configuration Debug for project noiseCancer ****
+make all 
+make: Nothing to be done for `all'.
+07:35:08 **** Incremental Build of configuration Debug for project noiseCancer ****
+make all 
+Building file: ../src/ac97_demo.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ac97_demo.d" -MT"src/ac97_demo.d" -o "src/ac97_demo.o" "../src/ac97_demo.c"
+../src/ac97_demo.c: In function 'main':
+../src/ac97_demo.c:253:23: warning: unused variable 'v5hn_le' [-Wunused-variable]
+Finished building: ../src/ac97_demo.c
+../src/ac97_demo.c:253:8: warning: unused variable 'v5hn_chan' [-Wunused-variable]
+ 
+../src/ac97_demo.c: In function 'AC97Handler':
+Building target: noiseCancer.elf
+../src/ac97_demo.c:493:9: warning: unused variable 'aac97' [-Wunused-variable]
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../lscript.ld -L../../noiseCancer_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "noiseCancer.elf"  ./src/New_Algo.o ./src/ac97.o ./src/ac97_demo.o ./src/ac97_irq.o ./src/mul_complex.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: noiseCancer.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size noiseCancer.elf  |tee "noiseCancer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16628	    448	  42004	  59080	   e6c8	noiseCancer.elf
+Finished building: noiseCancer.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck noiseCancer.elf -hw ../../project_hw_platform/system.xml -pe microblaze_0  |tee "noiseCancer.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../project_hw_platform/system.xml -pe microblaze_0
+noiseCancer.elf 
+
+ELF file	: noiseCancer.elf
+elfcheck passed.
+Finished building: noiseCancer.elf.elfcheck
+ 
+07:35:21 **** Incremental Build of configuration Debug for project noiseCancer ****
+make all 
+Building file: ../src/ac97_demo.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ac97_demo.d" -MT"src/ac97_demo.d" -o "src/ac97_demo.o" "../src/ac97_demo.c"
+../src/ac97_demo.c: In function 'main':
+../src/ac97_demo.c:253:23: warning: unused variable 'v5hn_le' [-Wunused-variable]
+../src/ac97_demo.c:253:8: warning: unused variable 'v5hn_chan' [-Wunused-variable]
+../src/ac97_demo.c: In function 'AC97Handler':
+../src/ac97_demo.c:493:9: warning: unused variable 'aac97' [-Wunused-variable]
+Finished building: ../src/ac97_demo.c
+ 
+Building target: noiseCancer.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../lscript.ld -L../../noiseCancer_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "noiseCancer.elf"  ./src/New_Algo.o ./src/ac97.o ./src/ac97_demo.o ./src/ac97_irq.o ./src/mul_complex.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: noiseCancer.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size noiseCancer.elf  |tee "noiseCancer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16628	    448	  42004	  59080	   e6c8	noiseCancer.elf
+Finished building: noiseCancer.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck noiseCancer.elf -hw ../../project_hw_platform/system.xml -pe microblaze_0  |tee "noiseCancer.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../project_hw_platform/system.xml -pe microblaze_0
+noiseCancer.elf 
+
+ELF file	: noiseCancer.elf
+elfcheck passed.
+Finished building: noiseCancer.elf.elfcheck
+ 
+07:35:25 **** Incremental Build of configuration Debug for project noiseCancer ****
+make all 
+make: Nothing to be done for `all'.
+07:36:02 **** Incremental Build of configuration Debug for project noiseCancer ****
+make all 
+Building file: ../src/ac97_demo.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ac97_demo.d" -MT"src/ac97_demo.d" -o "src/ac97_demo.o" "../src/ac97_demo.c"
+../src/ac97_demo.c: In function 'main':
+../src/ac97_demo.c:253:23: warning: unused variable 'v5hn_le' [-Wunused-variable]
+../src/ac97_demo.c:253:8: warning: unused variable 'v5hn_chan' [-Wunused-variable]
+../src/ac97_demo.c: In function 'AC97Handler':
+../src/ac97_demo.c:493:9: warning: unused variable 'aac97' [-Wunused-variable]
+Finished building: ../src/ac97_demo.c
+ 
+Building target: noiseCancer.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../lscript.ld -L../../noiseCancer_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "noiseCancer.elf"  ./src/New_Algo.o ./src/ac97.o ./src/ac97_demo.o ./src/ac97_irq.o ./src/mul_complex.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: noiseCancer.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size noiseCancer.elf  |tee "noiseCancer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16608	    448	  42000	  59056	   e6b0	noiseCancer.elf
+Finished building: noiseCancer.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck noiseCancer.elf -hw ../../project_hw_platform/system.xml -pe microblaze_0  |tee "noiseCancer.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../project_hw_platform/system.xml -pe microblaze_0
+noiseCancer.elf 
+
+ELF file	: noiseCancer.elf
+elfcheck passed.
+Finished building: noiseCancer.elf.elfcheck
+ 
+07:36:14 **** Incremental Build of configuration Debug for project noiseCancer ****
+make all 
+make: Nothing to be done for `all'.
+07:38:15 **** Incremental Build of configuration Debug for project noiseCancer ****
+make all 
+Building file: ../src/ac97_demo.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ac97_demo.d" -MT"src/ac97_demo.d" -o "src/ac97_demo.o" "../src/ac97_demo.c"
+../src/ac97_demo.c: In function 'main':
+../src/ac97_demo.c:253:23: warning: unused variable 'v5hn_le' [-Wunused-variable]
+Finished building: ../src/ac97_demo.c
+ 
+../src/ac97_demo.c:253:8: warning: unused variable 'v5hn_chan' [-Wunused-variable]
+Building target: noiseCancer.elf
+../src/ac97_demo.c: In function 'AC97Handler':
+Invoking: MicroBlaze gcc linker
+../src/ac97_demo.c:493:9: warning: unused variable 'aac97' [-Wunused-variable]
+mb-gcc -Wl,-T -Wl,../lscript.ld -L../../noiseCancer_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "noiseCancer.elf"  ./src/New_Algo.o ./src/ac97.o ./src/ac97_demo.o ./src/ac97_irq.o ./src/mul_complex.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: noiseCancer.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size noiseCancer.elf  |tee "noiseCancer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16628	    448	  42004	  59080	   e6c8	noiseCancer.elf
+Finished building: noiseCancer.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck noiseCancer.elf -hw ../../project_hw_platform/system.xml -pe microblaze_0  |tee "noiseCancer.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../project_hw_platform/system.xml -pe microblaze_0
+noiseCancer.elf 
+
+ELF file	: noiseCancer.elf
+elfcheck passed.
+Finished building: noiseCancer.elf.elfcheck
+ 
+07:38:40 **** Incremental Build of configuration Debug for project noiseCancer ****
+make all 
+make: Nothing to be done for `all'.
+07:48:53 **** Incremental Build of configuration Debug for project noiseCancer ****
+make all 
+make: Nothing to be done for `all'.
+07:54:00 **** Incremental Build of configuration Debug for project noiseCancer ****
+make all 
+Building file: ../src/ac97_demo.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ac97_demo.d" -MT"src/ac97_demo.d" -o "src/ac97_demo.o" "../src/ac97_demo.c"
+../src/ac97_demo.c: In function 'main':
+Finished building: ../src/ac97_demo.c
+../src/ac97_demo.c:123:23: warning: unused variable 'v5hn_le' [-Wunused-variable]
+ 
+../src/ac97_demo.c:123:8: warning: unused variable 'v5hn_chan' [-Wunused-variable]
+Building target: noiseCancer.elf
+../src/ac97_demo.c: In function 'AC97Handler':
+Invoking: MicroBlaze gcc linker
+../src/ac97_demo.c:363:9: warning: unused variable 'aac97' [-Wunused-variable]
+mb-gcc -Wl,-T -Wl,../lscript.ld -L../../noiseCancer_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "noiseCancer.elf"  ./src/New_Algo.o ./src/ac97.o ./src/ac97_demo.o ./src/ac97_irq.o ./src/mul_complex.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: noiseCancer.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size noiseCancer.elf  |tee "noiseCancer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16628	    448	  42004	  59080	   e6c8	noiseCancer.elf
+Finished building: noiseCancer.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck noiseCancer.elf -hw ../../project_hw_platform/system.xml -pe microblaze_0  |tee "noiseCancer.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../project_hw_platform/system.xml -pe microblaze_0
+noiseCancer.elf 
+
+ELF file	: noiseCancer.elf
+elfcheck passed.
+Finished building: noiseCancer.elf.elfcheck
+ 
+07:54:07 **** Incremental Build of configuration Debug for project noiseCancer ****
+make all 
+make: Nothing to be done for `all'.
+08:49:52 **** Incremental Build of configuration Debug for project noiseCancer ****
+make all 
+make: Nothing to be done for `all'.
+08:58:20 **** Incremental Build of configuration Debug for project noiseCancer ****
+make all 
+make: Nothing to be done for `all'.

@@ -1,0 +1,45 @@
+07:04:48 **** Build of configuration Debug for project measure ****
+make all 
+Building file: ../src/New_Algo.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/New_Algo.d" -MT"src/New_Algo.d" -o "src/New_Algo.o" "../src/New_Algo.c"
+Finished building: ../src/New_Algo.c
+ 
+Building file: ../src/ac97.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ac97.d" -MT"src/ac97.d" -o "src/ac97.o" "../src/ac97.c"
+../src/ac97.c: In function 'AC97_Select_Input':
+../src/ac97.c:218:9: warning: variable 'DATA' set but not used [-Wunused-but-set-variable]
+../src/ac97.c: In function 'GenSquare':
+../src/ac97.c:322:10: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+../src/ac97.c:320:10: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+../src/ac97.c: In function 'Get_Sample_Rate':
+../src/ac97.c:425:10: warning: variable 'read_VRA' set but not used [-Wunused-but-set-variable]
+Finished building: ../src/ac97.c
+ 
+Building file: ../src/ac97_demo.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ac97_demo.d" -MT"src/ac97_demo.d" -o "src/ac97_demo.o" "../src/ac97_demo.c"
+../src/ac97_demo.c: In function 'AC97Handler':
+../src/ac97_demo.c:492:9: warning: unused variable 'aac97' [-Wunused-variable]
+Finished building: ../src/ac97_demo.c
+ 
+Building file: ../src/ac97_irq.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ac97_irq.d" -MT"src/ac97_irq.d" -o "src/ac97_irq.o" "../src/ac97_irq.c"
+Finished building: ../src/ac97_irq.c
+ 
+Building file: ../src/mul_complex.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mul_complex.d" -MT"src/mul_complex.d" -o "src/mul_complex.o" "../src/mul_complex.c"
+Finished building: ../src/mul_complex.c
+make: *** No rule to make target `New_Algo.o', needed by `measure.elf'.  Stop.
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../noiseCancer_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+
+07:04:48 Build Finished (took 525ms)
+

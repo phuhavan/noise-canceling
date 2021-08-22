@@ -1,0 +1,46 @@
+23:23:20.026 INFO  - Processing command line option -hwspec /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/system.xml. 
+23:24:31.213 INFO  - Saving repository preferences. 
+23:24:31.213 INFO  - Reading in cores from local repositories: 
+		 /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project 
+23:24:31.220 INFO  - Updating libgen.options on all BSP projects. 
+23:24:31.221 INFO  - Cleaning BSP projects in the workspace. 
+23:25:54.031 INFO  - Successfully generated /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/noiseCancer/src/lscript.ld. 
+23:25:54.033 INFO  - Applying linker script to all configurations of project noiseCancer. 
+23:25:54.033 INFO  - Setting rebuild state to true for all configurations of project noiseCancer. 
+23:26:04.846 INFO  - FPGA configured successfully with bitstream "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/project_hw_platform/download.bit" 
+23:27:20.874 INFO  - Settings changed on project noiseCancer_bsp. Triggering a rebuild... 
+23:27:26.939 INFO  - Refreshed build settings on project noiseCancer 
+23:28:03.674 INFO  - FPGA configured successfully with bitstream "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/project_hw_platform/download.bit" 
+23:33:10.483 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+23:39:03.119 INFO  - FPGA configured successfully with bitstream "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/project_hw_platform/download.bit" 
+23:41:45.630 INFO  - Successfully generated /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/noiseCancer/src/lscript.ld. 
+23:41:45.631 INFO  - Applying linker script to all configurations of project noiseCancer. 
+23:41:45.632 INFO  - Setting rebuild state to true for all configurations of project noiseCancer. 
+23:41:57.139 INFO  - FPGA configured successfully with bitstream "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/project_hw_platform/download.bit" 
+23:47:45.288 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+23:47:59.217 INFO  - FPGA configured successfully with bitstream "/home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/project_hw_platform/download.bit" 
+06:34:00.885 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+06:36:46.845 INFO  - Processing command line option -hwspec /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/system.xml. 
+06:37:51.959 INFO  - Restoring local repository preferences: 
+		 /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project 
+06:37:53.438 INFO  - Saving repository preferences. 
+06:42:20.887 INFO  - Successfully generated /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/measure/src/lscript.ld. 
+06:42:20.888 INFO  - Applying linker script to all configurations of project measure. 
+06:42:20.889 INFO  - Setting rebuild state to true for all configurations of project measure. 
+06:55:50.182 INFO  - Successfully generated /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/measure/src/lscript.ld. 
+06:55:50.183 INFO  - Applying linker script to all configurations of project measure. 
+06:55:50.184 INFO  - Setting rebuild state to true for all configurations of project measure. 
+06:58:32.006 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+07:00:07.647 INFO  - Processing command line option -hwspec /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/system.xml. 
+07:17:25.635 INFO  - Successfully generated /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/noiseCancer/src/lscript.ld. 
+07:17:51.273 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+07:17:58.945 INFO  - Processing command line option -hwspec /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/system.xml. 
+07:18:42.999 INFO  - Processing command line option -hwspec /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/system.xml. 
+07:19:52.410 INFO  - Successfully generated /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/noiseCancer/lscript.ld. 
+07:21:28.381 INFO  - Restoring local repository preferences: 
+		 /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project 
+07:23:28.894 INFO  - Successfully generated /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/noiseCancer/lscript.ld. 
+07:23:49.479 INFO  - Successfully generated /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/noiseCancer/lscript.ld. 
+07:25:11.659 INFO  - Processing command line option -hwspec /home/phuhv/Workspace/NoiseCancelling/1403110617_final_R2L/project/SDK/SDK_Export/hw/system.xml. 
+07:36:14.887 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:20:08.247 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
