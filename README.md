@@ -7,5 +7,5 @@ Therefore, the system can not only process the real-time input data but also con
 In order to evaluate hardware resources and measuare performance of system, proposed system is implemented in FPGA
 development board (Xilinx XC6SLX45) and then placed in some noisy environments which are white Gaussian noise (WGN),
 F-16 cockpit noise and babble noise to assess the algorithm quality through specific targets.
-According to results of this project, I was accepted a paper in international conference on Advanced Technologies for
+According to results of this project, I submited a paper in the international conference on Advanced Technologies for
 Communication (ATC 2015).
